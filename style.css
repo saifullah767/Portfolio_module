@@ -1,0 +1,129 @@
+.container{
+    margin-left: 10px ;
+    margin-right: 10px ;
+    padding: 20px ;
+   
+}
+.header{
+    display:flex;
+    flex-direction: row;
+    border-radius: 20px ;
+    justify-content: space-between;
+    margin-left: 70px ;
+    margin-right: 70px;
+}
+.navbar{
+    float: inline-end;
+}
+ul,li,.a{
+    display: inline;
+    float: right;
+    margin: 5px;
+    padding: 5px;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+
+.a:hover{
+    background-color: #6070FF;
+    box-shadow: 0px 8px 16px rgba(64, 83, 252, 0.24);
+    border-radius: 30px ;
+    color: whitesmoke;
+}
+
+.logo1{
+    color: #a164f1;
+    font-weight: 1000;
+    font-size: 25px;
+
+}
+.content{
+    display: flex;
+    margin-left: 70px ;
+    margin-right: 70px;
+    flex-direction: column;
+    background-image: url("back.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+.heading{
+    font-weight: bold;
+font-style: normal;
+font-weight: 700;
+font-size: 48px;
+line-height: 60px;
+display: flex;
+align-items: center;
+letter-spacing: 0.37px;
+color: #091E42;
+}
+.para_text{
+    font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 28px;
+}
+.connect{
+    display: inline;
+    margin: 5px;
+    padding: 5px;
+    text-decoration: none;
+    color: rgb(119, 60, 153);
+}
+.menu{ display: none;
+    
+}
+
+.fa-twitter , .fa-linkedin , .fa-github{
+    margin-left: 20px ;
+    margin-right: 20px;
+    color: #624683;
+
+}
+
+@media all and (max-width:1000px) {
+    .para_text{
+ 
+width: 920px;
+height: 98px;
+
+    }
+}
+
+@media all and (max-width:600px) {
+    .header{
+        display:flex;
+        flex-direction: row;
+        border-radius: 20px ;
+        justify-content: space-between;
+        margin-left: 70px ;
+        margin-right: 70px;
+    }
+    .navbar{
+      display: none;
+    }
+
+    .menu{
+        display: flex;
+        margin-top: 30px ;
+        font-size: 28px;
+        color: #a164f1;
+    }
+    .para_text{   
+width: 80%;
+
+margin-left: 10px ;
+margin-right: 10px ;
+    }
+    .connect{
+        display: inline;
+        margin-top: 500px ;
+        margin: 5px;
+        padding: 5px;
+        text-decoration: none;
+        color: rgb(119, 60, 153);
+    }
+
+}
