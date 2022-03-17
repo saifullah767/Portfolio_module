@@ -18,7 +18,8 @@
   align-items: center;
   text-align: center;
   color: #6070ff;
-}.heading {
+  }
+.heading {
   position: static;
   width: 327px;
   height: 150px;
@@ -35,7 +36,8 @@
   order: 0;
   flex-grow: 0;
   margin: 12px 0px;
-}.para_text {
+}
+.para_text {
   position: static;
   width: 327px;
   height: 146px;
@@ -57,7 +59,7 @@
   font-weight: 500;
   font-size: 16px;
   line-height: 24px;
-color: #7f8cff;
+  color: #7f8cff;
 }
 .menu {
   display: none;
@@ -65,38 +67,38 @@ color: #7f8cff;
 .fa-twitter,
 .fa-linkedin,
 .fa-github {
- margin-left: 20px;
- margin-right: 20px;
- color: #624683;
+  margin-left: 20px;
+  margin-right: 20px;
+  color: #624683;
 }
 .content {
   background-image: url("header-shapes mobile.png");
   background-repeat: no-repeat;
 }
 @media all and (max-width: 600px) {
-.header {
- display: flex;
- flex-direction: row;
- border-radius: 20px;
- justify-content: space-between;
- margin-left: 70px;
- margin-right: 70px;
-}
-.navbar {
+  .header {
+    display: flex;
+    flex-direction: row;
+    border-radius: 20px;
+    justify-content: space-between;
+    margin-left: 70px;
+    margin-right: 70px;
+  }
+  .navbar {
     display: none;
-}
-.menu {
- display: flex;
- margin-top: 30px;
- font-size: 28px;
- color: #a164f1;
-}
-.para_text {
- width: 80%;
- margin-left: 10px;
- margin-right: 10px;
-}
-.connect {
+  }
+  .menu {
+    display: flex;
+    margin-top: 30px;
+    font-size: 28px;
+    color: #a164f1;
+  }
+  .para_text {
+    width: 80%;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  .connect {
     display: inline;
     margin-top: 500px;
     padding: 5px;
