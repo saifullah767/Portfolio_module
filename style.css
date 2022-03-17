@@ -12,9 +12,6 @@
     margin-left: 70px ;
     margin-right: 70px;
 }
-.navbar{
-    float: inline-end;
-}
 ul,li,.a{
     display: inline;
     float: right;
@@ -37,16 +34,7 @@ ul,li,.a{
     font-size: 25px;
 
 }
-.content{
-    display: flex;
-    margin-left: 70px ;
-    margin-right: 70px;
-    flex-direction: column;
-    background-image: url("back.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    
-}
+
 .heading{
     font-weight: bold;
 font-style: normal;
@@ -82,14 +70,15 @@ line-height: 28px;
     color: #624683;
 
 }
+.content{
+   
+    
+    background-image: url("header-shapes mobile.png");
+  
+    background-repeat: no-repeat; 
 
-@media all and (max-width:1000px) {
-    .para_text{
- 
-width: 920px;
-height: 98px;
-
-    }
+    background-size: cover ;
+  
 }
 
 @media all and (max-width:600px) {
@@ -126,5 +115,8 @@ margin-right: 10px ;
      
         color: rgb(119, 60, 153);
     }
-
+  
+  
+  
+    
 }
