@@ -42,7 +42,7 @@ ul,li,.a{
     margin-left: 70px ;
     margin-right: 70px;
     flex-direction: column;
-    background-image: url("back.jpg");
+    background-image: url("back.png");
     background-repeat: no-repeat;
     background-size: cover;
     
@@ -123,6 +123,7 @@ margin-right: 10px ;
         margin: 5px;
         padding: 5px;
         text-decoration: none;
+     
         color: rgb(119, 60, 153);
     }
 
