@@ -15,6 +15,11 @@
   padding: 8px;
   text-decoration: none;
 }
+.menu {
+  display: flex;
+  font-size: 28px;
+  color: #a164f1;
+}
 .heading {
   position: static;
   width: 327px;
@@ -59,9 +64,6 @@
   color: #7f8cff;
   text-decoration: none;
 }
-.menu {
-  display: none;
-}
 .content {
   background-image: url("header-shapes mobile.png");
   background-repeat: no-repeat;
@@ -70,7 +72,6 @@
   left: 0px;
   top: 92px;
   border-radius: 0px;
-  padding: 114px, 24px, 114px, 24px;
 }
 .icons {
   display: flex;
@@ -84,11 +85,6 @@
 ul,
 li {
   list-style: none;
-}
-.menu {
-  display: flex;
-  font-size: 28px;
-  color: #a164f1;
 }
 .social {
   padding: 5px;
