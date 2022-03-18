@@ -72,6 +72,12 @@
   background-image: url("header-shapes mobile.png");
   background-repeat: no-repeat;
 }
+.icons{
+  display: flex;
+}
+ul,li{
+  list-style: none;
+}
 @media all and (max-width: 600px) {
   .header {
     display: flex;
