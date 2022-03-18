@@ -35,6 +35,7 @@
   flex: none;
   order: 0;
   flex-grow: 0;
+  margin: 12px 0px;
 }
 .para_text {
   position: static;
@@ -52,6 +53,8 @@
   position: static;
   width: 117px;
   height: 24px;
+  left: 0px;
+  top: 0px;
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
@@ -78,23 +81,25 @@
 ul,li{
   list-style: none;
 }
+.menu {
+  display: flex;
+  font-size: 28px;
+  color: #a164f1;
+}
 @media all and (max-width: 600px) {
   .header {
     display: flex;
     flex-direction: row;
     border-radius: 20px;
     justify-content: space-between;
-    margin-left: 70px;
-    margin-right: 70px;
-  }
-  .navbar {
-    display: none;
   }
   .menu {
     display: flex;
-    margin-top: 30px;
     font-size: 28px;
     color: #a164f1;
+  }
+  .navbar {
+    display: none;
   }
   .para_text {
     width: 80%;
