@@ -12,7 +12,7 @@
   align-items: center;
   text-align: center;
   color: #6070ff;
-  padding:8px;
+  padding: 8px;
   text-decoration: none;
 }
 .heading {
@@ -66,23 +66,23 @@
   background-image: url("header-shapes mobile.png");
   background-repeat: no-repeat;
   height: 604.0000610351562px;
-width: 375px;
-left: 0px;
-top: 92px;
-border-radius: 0px;
-padding: 114px, 24px, 114px, 24px;
-
+  width: 375px;
+  left: 0px;
+  top: 92px;
+  border-radius: 0px;
+  padding: 114px, 24px, 114px, 24px;
 }
-.icons{
+.icons {
   display: flex;
   height: 20.000062942504883px;
-width: 170.1666717529297px;
-left: 24px;
-top: 470px;
-border-radius: 0px;
-padding-left: 0px;
+  width: 170.1666717529297px;
+  left: 24px;
+  top: 470px;
+  border-radius: 0px;
+  padding-left: 0px;
 }
-ul,li{
+ul,
+li {
   list-style: none;
 }
 .menu {
@@ -90,41 +90,40 @@ ul,li{
   font-size: 28px;
   color: #a164f1;
 }
-.social{
+.social {
   padding: 5px;
 }
-.twitter{
+.twitter {
   height: 19.962478637695312px;
   width: 19.985925674438477px;
   left: 24px;
   top: 470px;
   border-radius: 0px;
-  
 }
-.logo{
+.logo {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
-.git{
+.git {
   height: 20px;
-width: 17.985200881958008px;
-left: 143px;
-top: 470px;
-border-radius: 0px;
+  width: 17.985200881958008px;
+  left: 143px;
+  top: 470px;
+  border-radius: 0px;
 }
-.linkdein{
+.linkdein {
   height: 20.000062942504883px;
-width: 20.00014877319336px;
-left: 63px;
-top: 470px;
-border-radius: 0px;
+  width: 20.00014877319336px;
+  left: 63px;
+  top: 470px;
+  border-radius: 0px;
 }
-.m{
+.m {
   height: 16px;
-width: 20px;
-left: 103px;
-top: 472px;
-border-radius: 0px;
-padding-top: 3px;
+  width: 20px;
+  left: 103px;
+  top: 472px;
+  border-radius: 0px;
+  padding-top: 3px;
 }
