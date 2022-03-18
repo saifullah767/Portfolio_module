@@ -1,5 +1,4 @@
-# #Project Name
-Portfolio project
+# Portfolio project
 
 Built With
 HTML CSS
