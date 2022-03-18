@@ -12,12 +12,12 @@
 }
 .main {
   padding: 10px;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 h1 {
   color: #172b4d;
   font-size: 32px;
-  font-weight: 700 , bold;
+  font-weight: 700, bold;
 }
 .can {
   color: #344563;
@@ -27,7 +27,7 @@ h1 {
 }
 .mid {
   display: flex;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-weight: bold;
   gap: 12px;
 }
@@ -57,21 +57,21 @@ li {
   padding: 5px;
   text-decoration: none;
   color: #6070ff;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 12px;
   line-height: 16px;
 }
-ul{
-    padding-left: 0px;
+ul {
+  padding-left: 0px;
 }
 .pro {
   color: #396df2;
   border-radius: 8px;
   padding: 5px;
   text-decoration: none;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   margin-top: 10px;
   border: 1px solid #6070ff;
