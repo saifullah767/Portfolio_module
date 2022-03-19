@@ -109,7 +109,7 @@ ul {
 }
 .about_h {
   color: #172b4d;
-  
+
   font-weight: bolder;
   font-size: 40px;
 }
@@ -134,45 +134,50 @@ ul,
 ul {
   width: 50%;
 }
-.skills,
+
 ul {
   display: grid;
   grid-column: 1;
   list-style: none;
 }
-.skill {
-  font-style: normal;
-  font-weight: 500;
-  line-height: 24px;
-}
-.skills {
-  text-align: left;
-}
-.iconimg {
+iconimg {
   position: relative;
   left: 127px;
 }
 .lang {
-  display: grid;
-  grid-column: 1;
+  display: flex;
+  flex-direction: column;
   margin-top: 25px;
+  position: relative;
+  left: 8px;
 }
 .ski {
-  display: flex;
+  list-style-position: inside;
+  width: 235%;
+  flex: none;
   background-color: #f7f7f9;
   padding: 10px;
   margin: 5px;
-  width: 154%;
+
   border-radius: 5px;
 }
 .sk {
   position: relative;
-  left: 12px;
-  top: 13px;
+  left: 6px;
+  top: -17px;
 }
 hr {
-  width: 150%;
+  width: 100%;
 }
 .toggle {
   left: 199px;
+}
+.one {
+  list-style-image: url("./images/JS.png");
+}
+.two {
+  list-style-image: url("./images/html.png");
+}
+.three {
+  list-style-image: url("./images/css.png");
 }
