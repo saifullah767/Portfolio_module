@@ -130,20 +130,14 @@ ul,
   color: black;
   text-decoration: none;
 }
-.icons,
-ul {
-  width: 50%;
-}
 
 ul {
+  width: 50%;
   display: grid;
   grid-column: 1;
   list-style: none;
 }
-iconimg {
-  position: relative;
-  left: 127px;
-}
+
 .lang {
   display: flex;
   flex-direction: column;
