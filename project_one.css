@@ -1,14 +1,22 @@
 .container {
-  height: 552px;
-  width: 327px;
+  display: grid;
+  grid-template-columns: auto;
+  padding: 10px;
+  grid-column-start: 1;
+  grid-auto-rows: max-content;
+  row-gap: 50px;
+}
+.card {
   left: 24px;
   top: 114px;
   border-radius: 16px;
-  padding: 16px;
-  display: flexbox;
+  padding: 38px;
+  text-align: left;
+  justify-content: center;
 }
 .snap {
-  padding: 5px;
+  display: flex;
+  justify-content: center;
 }
 .main {
   padding: 10px;
@@ -17,7 +25,7 @@
 h1 {
   color: #172b4d;
   font-size: 32px;
-  font-weight: 700, bold;
+  font-weight: bold;
 }
 .can {
   color: #344563;
@@ -37,11 +45,20 @@ h1 {
   padding-top: 6px;
 }
 
+.links,
 ul,
-li {
-  display: flex;
+.link {
+  display: grid;
+
+  grid-row: 1;
+  /* display: flex; */
   gap: 10px;
   color: black;
+  text-decoration: none;
+}
+.links,
+li {
+  padding: 10px;
 }
 .para {
   display: flex;
@@ -66,6 +83,7 @@ li {
 ul {
   padding-left: 0px;
 }
+
 .pro {
   color: #396df2;
   border-radius: 8px;
@@ -76,4 +94,86 @@ ul {
   margin-top: 10px;
   border: 1px solid #6070ff;
   box-sizing: border-box;
+}
+.pro:hover {
+  background-color: #6070ff;
+  color: #ebebff;
+  box-shadow: 5px 5px #dde2eb;
+}
+.about {
+  height: 1263px;
+  width: 375px;
+  margin-top: 130px;
+  padding: 10px;
+  font-family: "Poppins", sans-serif;
+}
+.about_h {
+  color: #172b4d;
+  font-size: 32px;
+  font-weight: bolder;
+  font-size: 40px;
+}
+.conn {
+  font-weight: 500;
+  font-size: 16px;
+  color: #7f8cff;
+  text-decoration: none;
+  gap: 35px;
+}
+.icons,
+ul,
+.icon {
+  display: grid;
+
+  grid-row: 1;
+
+  color: black;
+  text-decoration: none;
+}
+.icons,
+ul {
+  width: 50%;
+}
+.skills,
+ul {
+  display: grid;
+  grid-column: 1;
+  list-style: none;
+}
+.skill {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+}
+.skills {
+  text-align: left;
+}
+.iconimg {
+  position: relative;
+  left: 127px;
+}
+.lang {
+  display: grid;
+  grid-column: 1;
+  margin-top: 25px;
+}
+.ski {
+  display: flex;
+  background-color: #f7f7f9;
+  padding: 10px;
+  margin: 5px;
+  width: 154%;
+  border-radius: 5px;
+}
+.sk {
+  position: relative;
+  left: 12px;
+  top: 13px;
+}
+hr {
+  width: 150%;
+}
+.toggle {
+  left: 199px;
 }
