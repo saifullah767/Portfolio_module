@@ -1,34 +1,51 @@
-Portfolio
-In this project I design the mobile version of the portfolio.
-It has two section one is toolbar which is navbar and the other is heading section. 
+# Portfolio project
 
-Built With
-Major languages
-HTML
-CSS
+> This is the portfolio of mobile version. Having four pages of projects and one about section.
 
-Getting Started
-You can setup this project on your mobile phone
+## Built With
+
+- HTML
+- CSS
+- HTML5
+
+## Getting Started
+
+**You can clone the repo and enjoy the project.**
+**You can modify it by using media querry.**
 
 To get a local copy up and running follow these simple example steps.
 
-Prerequisites
-Setup
-Install
-Usage
-Run tests
-Deployment
+### Prerequisites
 
-Author
-👤 Saifullah
+### Setup
 
-GitHub: https://github.com/saifullah767
-LinkedIn: https://www.linkedin.com/in/saifullah-khan-b0637b169
+### Install
 
-🤝 Contributing
+### Usage
+
+### Run tests
+
+### Deployment
+
+## Authors
+
+👤 **Saifullah**
+
+- GitHub: [@githubhandle](https://github.com/saifullah767)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/saifullah-khan-b0637b169)
+
+## 🤝 Contributing
+
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the issues page.
+Feel free to check the [issues page](../../issues/).
 
-Show your support
+## Show your support
+
 Give a ⭐️ if you like this project!
+
+## Acknowledgments
+
+- You can setup your portfolio
+- It will helpful to you
+
