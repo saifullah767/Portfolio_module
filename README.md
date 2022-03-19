@@ -1,5 +1,3 @@
-![](https://img.shields.io/badge/Microverse-blueviolet)
-
 # Portfolio project
 
 > This is the portfolio of mobile version. Having four pages of projects and one about section.
