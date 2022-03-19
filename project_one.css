@@ -82,6 +82,10 @@ li {
 }
 ul {
   padding-left: 0px;
+  width: 50%;
+  display: grid;
+  grid-column: 1;
+  list-style: none;
 }
 
 .pro {
@@ -129,13 +133,6 @@ ul,
 
   color: black;
   text-decoration: none;
-}
-
-ul {
-  width: 50%;
-  display: grid;
-  grid-column: 1;
-  list-style: none;
 }
 
 .lang {
