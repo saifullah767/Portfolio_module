@@ -1,37 +1,57 @@
+body{
+  background-color: #F7F7F9;
+}
 .container {
-  display: grid;
-  grid-template-columns: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: right;
   padding: 10px;
   grid-column-start: 1;
   grid-auto-rows: max-content;
   row-gap: 50px;
+  width: 82% ;
+  
 }
 .card {
+  background-color: #FFFFFF;
   left: 24px;
   top: 114px;
   border-radius: 16px;
-  padding: 38px;
+  padding-bottom: 28px;
+  padding-top: 15px;
   text-align: left;
   justify-content: center;
 }
 .snap {
-  display: flex;
+  display: flex ;
   justify-content: center;
 }
 .main {
   padding: 10px;
   font-family: "Poppins", sans-serif;
+  position: relative;
+  right: -10px;
 }
 h2 {
   color: #172b4d;
   font-size: 32px;
   font-weight: bold;
+  width: 295px;
+height: 36px;
 }
 .can {
   color: #344563;
+ 
+font-weight: 600;
+font-size: 13px;
+line-height: 16px;
 }
 .side {
   color: #7a869a;
+
+font-weight: 600;
+font-size: 13px;
+line-height: 16px;
 }
 .mid {
   display: flex;
@@ -42,7 +62,7 @@ h2 {
 .dot {
   height: 10px;
   width: 10px;
-  padding-top: 6px;
+  padding-top: 3px;
 }
 
 .links,
@@ -51,7 +71,6 @@ ul,
   display: grid;
 
   grid-row: 1;
-  /* display: flex; */
   gap: 10px;
   color: black;
   text-decoration: none;
@@ -64,6 +83,9 @@ li {
   display: flex;
   flex-wrap: wrap;
   color: #344563;
+  font-weight: 400;
+font-size: 15px;
+line-height: 24px;
 }
 .links {
   margin-bottom: 26px;
@@ -105,6 +127,8 @@ ul {
   box-shadow: 5px 5px #dde2eb;
 }
 .about {
+  border-radius: 0px 86px;
+  background-color: #FFFFFF;
   height: 1263px;
   width: 375px;
   margin-top: 130px;
@@ -113,7 +137,6 @@ ul {
 }
 .about_h {
   color: #172b4d;
-
   font-weight: bolder;
   font-size: 40px;
 }
