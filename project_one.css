@@ -1,5 +1,5 @@
-body{
-  background-color: #F7F7F9;
+body {
+  background-color: #f7f7f9;
 }
 .container {
   display: flex;
@@ -9,11 +9,10 @@ body{
   grid-column-start: 1;
   grid-auto-rows: max-content;
   row-gap: 50px;
-  width: 82% ;
-  
+  width: 82%;
 }
 .card {
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   left: 24px;
   top: 114px;
   border-radius: 16px;
@@ -23,7 +22,7 @@ body{
   justify-content: center;
 }
 .snap {
-  display: flex ;
+  display: flex;
   justify-content: center;
 }
 .main {
@@ -37,21 +36,21 @@ h2 {
   font-size: 32px;
   font-weight: bold;
   width: 295px;
-height: 36px;
+  height: 36px;
 }
 .can {
   color: #344563;
- 
-font-weight: 600;
-font-size: 13px;
-line-height: 16px;
+
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 16px;
 }
 .side {
   color: #7a869a;
 
-font-weight: 600;
-font-size: 13px;
-line-height: 16px;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 16px;
 }
 .mid {
   display: flex;
@@ -84,8 +83,8 @@ li {
   flex-wrap: wrap;
   color: #344563;
   font-weight: 400;
-font-size: 15px;
-line-height: 24px;
+  font-size: 15px;
+  line-height: 24px;
 }
 .links {
   margin-bottom: 26px;
@@ -128,7 +127,7 @@ ul {
 }
 .about {
   border-radius: 0px 86px;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   height: 1263px;
   width: 375px;
   margin-top: 130px;
