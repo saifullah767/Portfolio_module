@@ -194,3 +194,17 @@ hr {
 .three {
   list-style-image: url("./images/css.png");
 }
+.contact {
+  background-color: #6070ff;
+  background-image: url(./images/contactbackground.png);
+  background-size: 60% 700px;
+  background-repeat: no-repeat;
+  background-position-x: right;
+  border-radius: 60px 0px 0px 0px;
+  height: 779px;
+  width: 375px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 10px;
+}
