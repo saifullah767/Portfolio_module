@@ -208,3 +208,16 @@ hr {
   justify-content: center;
   padding: 10px;
 }
+
+.contact p {
+  color: white;
+  font-style: normal;
+  font-weight: 200;
+  font-size: 20px;
+  line-height: 28px;
+  text-align: center;
+  align-items: center;
+  width: 90%;
+  margin-left: 10px;
+}
+
