@@ -1,6 +1,6 @@
 # Portfolio project
 
-> This is the portfolio of mobile version. Having four pages of projects and one about section.
+> This is the portfolio of mobile version. Having four pages of projects , one about section and contact page.
 
 ## Built With
 
