@@ -128,7 +128,7 @@ ul {
 .about {
   border-radius: 0px 86px;
   background-color: #ffffff;
-  height: 1263px;
+  height: 1020px;
   width: 375px;
   margin-top: 130px;
   padding: 10px;
@@ -216,11 +216,13 @@ hr {
   line-height: 52px;
   align-items: center;
   text-align: center;
-  margin: 10px 0px 0px 0px;
+  font-family: "Poppins", sans-serif;
+  margin: 10px 0px 18px 27px;
 }
 .contact p {
   color: white;
   font-style: normal;
+  font-family: "Poppins", sans-serif;
   font-weight: 200;
   font-size: 20px;
   line-height: 28px;
@@ -246,7 +248,6 @@ hr {
   margin-bottom: 8px;
   height: 48px;
 }
-
 .contact textarea {
   border: 1px solid #cfd8dc;
   border-radius: 5px;
@@ -254,5 +255,26 @@ hr {
   padding: 8px;
   font-family: "Poppins", sans-serif;
   font-size: 17px;
+}
+.contact button {
+  height: 48px;
+  width: 140px;
+  left: 24px;
+  top: 5317px;
+  margin-top: 25px;
+  border-radius: 8px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 24px;
+  border: 1px solid #cfd8dc;
+  color: #6070ff;
+  font-family: "Poppins", sans-serif;
+}
+.contact button:hover {
+  background-color: #6070ff;
+  color: #ebebff;
+  border: 1px solid #cfd8dc;
+  box-shadow: 5px 5px #8490a7;
 }
 
