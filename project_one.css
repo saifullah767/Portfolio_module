@@ -208,7 +208,16 @@ hr {
   justify-content: center;
   padding: 10px;
 }
-
+.contact h2 {
+  color: white;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
+  align-items: center;
+  text-align: center;
+  margin: 10px 0px 0px 0px;
+}
 .contact p {
   color: white;
   font-style: normal;
@@ -220,4 +229,20 @@ hr {
   width: 90%;
   margin-left: 10px;
 }
-
+.contact form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 5px;
+}
+.contact input {
+  line-height: 20px;
+  font-size: 17px;
+  padding-left: 15px;
+  margin-top: 10px;
+  font-family: "Poppins", sans-serif;
+  border: 1px solid #cfd8dc;
+  border-radius: 8px;
+  margin-bottom: 8px;
+  height: 48px;
+}
