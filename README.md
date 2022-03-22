@@ -7,6 +7,7 @@
 - HTML
 - CSS
 - HTML5
+- Figma template
 
 ## Getting Started
 
@@ -17,15 +18,26 @@ To get a local copy up and running follow these simple example steps.
 
 ### Prerequisites
 
+- Have some knowledge about HTML and CSS
+- Figma User Interface design templates
+- Be familiar with git commands
+- Basics understanding of Linters
+- structure of a portfolio website
+- Familiarity with flexbox
+- Knowledge of css grid
+
 ### Setup
+
+- Run [git clone https://github.com/saifullah767/Portfolio_module.git]
 
 ### Install
 
-### Usage
+- Run [npm install] to install all project dependencies
 
 ### Run tests
 
-### Deployment
+- Run [npx hintrc .] to test the markup or HTML
+- Run [npx stylelint "**/**.{css,scss}] to test the stylesheet
 
 ## Authors
 
@@ -33,6 +45,10 @@ To get a local copy up and running follow these simple example steps.
 
 - GitHub: [@githubhandle](https://github.com/saifullah767)
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/saifullah-khan-b0637b169)
+
+👤 **Rafael**
+
+- GitHub: [@githubhandle](https://github.com/rega1237)
 
 ## 🤝 Contributing
 
@@ -48,4 +64,3 @@ Give a ⭐️ if you like this project!
 
 - You can setup your portfolio
 - It will helpful to you
-
