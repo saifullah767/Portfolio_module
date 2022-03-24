@@ -1,3 +1,11 @@
+header{
+  display: flex;
+  width: 375px;
+}
+header div {
+  position: relative;
+  left: 15rem ;
+}
 .logo1 {
   position: static;
   width: 76px;
