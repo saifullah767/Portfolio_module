@@ -2,10 +2,16 @@ body {
   background-color: #f7f7f9;
 }
 
-
+.pageone{
+  background-color: #ffffff;
+  width: 375px;
+  font-family: "Poppins", sans-serif;
+  border-bottom-left-radius: 70px;
+}
 header{
   display: flex;
-  width: 375px;
+  padding-left: 10px;
+
 }
 header div {
   position: relative;
@@ -49,7 +55,7 @@ header div {
   flex: none;
   order: 0;
   flex-grow: 0;
-  margin: 12px 0px;
+  margin: 12px 20px;
   padding-top: 60px;
 }
 .para_text {
@@ -58,6 +64,7 @@ header div {
   height: 115px;
   left: 24px;
   top: 276px;
+  margin: 12px 20px;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -65,11 +72,11 @@ header div {
   color: #344563;
 }
 .connect {
-  position: static;
+  position: relative;
   width: 117px;
   height: 24px;
-  left: 0px;
-  top: 0px;
+  left: 20px;
+  top: 15px;
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
@@ -78,7 +85,7 @@ header div {
   text-decoration: none;
 }
 .content {
-  background-image: url("header-shapes mobile.png");
+  background-image: url("./images/header-shapes.png ");
   background-repeat: no-repeat;
   height: 604.0000610351562px;
   width: 375px;
@@ -86,22 +93,12 @@ header div {
   top: 92px;
   border-radius: 0px;
 }
-.icons {
-  display: flex;
-  height: 20.000062942504883px;
-  width: 170.1666717529297px;
-  left: 24px;
-  top: 470px;
-  border-radius: 0px;
-  padding-left: 0px;
-}
+
 ul,
 li {
   list-style: none;
 }
-.social {
-  padding: 5px;
-}
+
 .twitter {
   height: 19.962478637695312px;
   width: 19.985925674438477px;
@@ -183,7 +180,6 @@ h2 {
 }
 .side {
   color: #7a869a;
-
   font-weight: 600;
   font-size: 13px;
   line-height: 16px;
@@ -238,7 +234,7 @@ li {
   line-height: 16px;
 }
 ul {
-  padding-left: 0px;
+  padding-left: 5px;
   width: 50%;
   display: grid;
   grid-column: 1;
@@ -262,7 +258,7 @@ ul {
   box-shadow: 5px 5px #dde2eb;
 }
 .about {
-  border-radius: 0px 86px;
+  border-top-right-radius: 86px;
   background-color: #ffffff;
   height: 1020px;
   width: 375px;
@@ -416,138 +412,3 @@ hr {
 
 
 
-
-/* 
-header{
-  display: flex;
-  width: 375px;
-}
-header div {
-  position: relative;
-  left: 15rem ;
-}
-.logo1 {
-  position: static;
-  width: 76px;
-  height: 20px;
-  left: 12px;
-  top: 10px;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 20px;
-  display: flex;
-  align-items: center;
-  text-align: center;
-  color: #6070ff;
-  padding: 8px;
-  text-decoration: none;
-}
-.menu {
-  display: flex;
-  font-size: 28px;
-  color: #a164f1;
-}
-.heading {
-  position: static;
-  width: 327px;
-  height: 150px;
-  left: 24px;
-  top: 114px;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 40px;
-  line-height: 52px;
-  display: flex;
-  align-items: center;
-  color: #172b4d;
-  flex: none;
-  order: 0;
-  flex-grow: 0;
-  margin: 12px 0px;
-  padding-top: 60px;
-}
-.para_text {
-  position: static;
-  width: 327px;
-  height: 115px;
-  left: 24px;
-  top: 276px;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 24px;
-  color: #344563;
-}
-.connect {
-  position: static;
-  width: 117px;
-  height: 24px;
-  left: 0px;
-  top: 0px;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 24px;
-  color: #7f8cff;
-  text-decoration: none;
-}
-.content {
-  background-image: url("header-shapes mobile.png");
-  background-repeat: no-repeat;
-  height: 604.0000610351562px;
-  width: 375px;
-  left: 0px;
-  top: 92px;
-  border-radius: 0px;
-}
-.icons {
-  display: flex;
-  height: 20.000062942504883px;
-  width: 170.1666717529297px;
-  left: 24px;
-  top: 470px;
-  border-radius: 0px;
-  padding-left: 0px;
-}
-ul,
-li {
-  list-style: none;
-}
-.social {
-  padding: 5px;
-}
-.twitter {
-  height: 19.962478637695312px;
-  width: 19.985925674438477px;
-  left: 24px;
-  top: 470px;
-  border-radius: 0px;
-}
-.logo {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-.git {
-  height: 20px;
-  width: 17.985200881958008px;
-  left: 143px;
-  top: 470px;
-  border-radius: 0px;
-}
-.linkdein {
-  height: 20.000062942504883px;
-  width: 20.00014877319336px;
-  left: 63px;
-  top: 470px;
-  border-radius: 0px;
-}
-.m {
-  height: 16px;
-  width: 20px;
-  left: 103px;
-  top: 472px;
-  border-radius: 0px;
-  padding-top: 3px;
-} */
