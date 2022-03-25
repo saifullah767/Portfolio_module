@@ -19,6 +19,12 @@
     flex-direction: row;
     justify-content: space-between;
   }
+  ul {
+    padding-left: 5px;
+    display: grid;
+    grid-column: 1;
+    list-style: none;
+  }
   nav ul {
     list-style: none;
     display: flex;
@@ -522,7 +528,7 @@
     border-radius: 0px;
   }
 
-  ul,
+  ul
   li {
     list-style: none;
   }
@@ -667,13 +673,7 @@
     font-size: 12px;
     line-height: 16px;
   }
-  ul {
-    padding-left: 5px;
-    /* width: 50%; */
-    display: grid;
-    grid-column: 1;
-    list-style: none;
-  }
+
 
   .pro {
     color: #396df2;
