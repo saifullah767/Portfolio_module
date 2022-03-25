@@ -175,17 +175,19 @@
     width: 10px;
     padding-top: 3px;
   }
-  .links,
-  ul,
+
   .link {
     display: grid;
     grid-row: 1;
-    gap: 10px;
+
     color: black;
     text-decoration: none;
   }
   .links ul {
     padding-left: 1px;
+    display: grid;
+    grid-row: 1;
+    gap: 10px;
   }
   .links ul li {
     padding: 7px;
@@ -427,9 +429,9 @@
   nav ul {
     display: none;
   }
-  .container {
+  /* .container {
     width: 100%;
-  }
+  } */
 
   .pageone {
     background-color: #ffffff;
@@ -520,8 +522,6 @@
     top: 92px;
     border-radius: 0px;
   }
-
-
   .twitter {
     height: 19.962478637695312px;
     width: 19.985925674438477px;
@@ -625,14 +625,19 @@
     padding-top: 3px;
   }
 
-  .links,
-  ul,
   .link {
     display: grid;
     grid-row: 1;
     gap: 10px;
     color: black;
     text-decoration: none;
+  }
+  .links
+  ul{
+    display: grid;
+    grid-row: 1;
+    gap: 10px;
+    padding-left: 0px;
   }
   .links,
   li {
