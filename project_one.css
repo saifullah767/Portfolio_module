@@ -14,7 +14,6 @@ body{
 .pageone{
 
   background-color: #FFFFFF;
-  height: 100%;
 }
 
 nav{
@@ -101,6 +100,126 @@ nav a{
 
 }
 
+.card{
+  display: flex;
+  gap: 10px;
+  margin:57px 68px 11px 57px ;
+  background-color: #ffffff;
+  border-radius: 16px;
+  text-align: left;
+  justify-content: start;
+
+}
+.snap {
+  display: none;
+}
+.websnap{
+display: flex;
+/* width: 544px; */
+height: 448px;
+padding: 12px 12px 12px 12px ;
+}
+.main {
+  padding: 10px 10px 10px 46px;
+  font-family: "Poppins", sans-serif;
+  position: relative;
+  /* right: -10px; */
+}
+h2 {
+  color: #172b4d;
+  font-size: 32px;
+  font-weight: bold;
+  width: 295px;
+  height: 36px;
+}
+.can {
+  color: #344563;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 16px;
+}
+.side {
+  color: #7a869a;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 16px;
+}
+.mid {
+  display: flex;
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+  gap: 12px;
+}
+.dot {
+  height: 10px;
+  width: 10px;
+  padding-top: 3px;
+}
+.links,
+ul,
+.link {
+  display: grid;
+
+  grid-row: 1;
+  gap: 10px;
+  color: black;
+  text-decoration: none;
+}
+.links,
+li {
+  padding: 10px;
+}
+.para {
+  display: flex;
+  flex-wrap: wrap;
+  color: #344563;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+}
+.links {
+  margin-bottom: 26px;
+}
+.link {
+  background-color: #ebebff;
+  border-radius: 8px;
+  padding: 5px;
+  text-decoration: none;
+  color: #6070ff;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  text-align: center;
+  font-size: 12px;
+  line-height: 16px;
+}
+ul {
+  padding-left: 5px;
+  width: 50%;
+  display: grid;
+  grid-column: 1;
+  list-style: none;
+}
+.webcard{
+ display: flex;
+ flex-direction: row-reverse;
+}
+.pro {
+  color: #396df2;
+  border-radius: 8px;
+  padding: 5px;
+  text-decoration: none;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  margin-top: 10px;
+  border: 1px solid #6070ff;
+  box-sizing: border-box;
+}
+.pro:hover {
+  background-color: #6070ff;
+  color: #ebebff;
+  box-shadow: 5px 5px #dde2eb;
+}
 
 }
 
@@ -273,6 +392,9 @@ nav a{
   .snap {
     display: flex;
     justify-content: center;
+  }
+  .websnap{
+    display: none;
   }
   .main {
     padding: 10px;
