@@ -427,7 +427,8 @@
   }
   header {
     display: flex;
-    padding-left: 10px;
+    justify-content: space-between;
+    padding: 0.3rem;
   }
   header div {
     position: relative;
