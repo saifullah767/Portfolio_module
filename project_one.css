@@ -514,6 +514,11 @@
     top: 92px;
     border-radius: 0px;
   }
+  .Social_link ul{
+    display: flex;
+    list-style: none;
+    padding-left: 10px;
+  }
   .twitter {
     height: 19.962478637695312px;
     width: 19.985925674438477px;
