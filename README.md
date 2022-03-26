@@ -1,6 +1,6 @@
 # Portfolio project
 
-> This is the portfolio of mobile version. Having four pages of projects , one about section and contact page.
+> This is the responsive portfolio which can use for both mobile and computer . Having one header page , four pages of projects , one about section and contact page.
 
 ## Built With
 
