@@ -108,8 +108,6 @@
     margin: 57px 23px 11px 41px;
     background-color: #ffffff;
     border-radius: 16px;
-    text-align: left;
-    justify-content: start;
     width: 90%;
   }
   .snap {
@@ -137,7 +135,7 @@
     padding: 10px 10px 0px 0px;
     font-family: "Poppins", sans-serif;
     position: relative;
-    width: 32%;
+    width: 48%;
   }
   .main1 {
     padding: 10px 10px 10px 26px;
@@ -206,11 +204,13 @@
     flex-wrap: wrap;
     color: #344563;
     font-weight: 400;
-    font-size: 15px;
+    font-size: 16px;
     line-height: 24px;
   }
   .links {
-    margin-bottom: 26px;
+    margin-bottom: 3rem;
+    width:40%;
+
   }
   .webcard {
     display: flex;
@@ -219,7 +219,7 @@
   .pro {
     color: #396df2;
     border-radius: 8px;
-    padding: 5px;
+    padding: 10px;
     text-decoration: none;
     font-family: "Poppins", sans-serif;
     font-style: normal;
@@ -247,14 +247,8 @@
     width: 60%;
   }
   .iconimg {
-    position: relative;
-    left: 233px;
-    top: 1px;
-  }
-  .iconimg1 {
-    position: relative;
-    left: 290px;
-    top: 6px;
+    position: absolute;
+    right: 125px;
   }
   .about_right ul {
     list-style: none;
@@ -460,12 +454,12 @@
     display: flex;
     font-size: 28px;
     color: #a164f1;
-    position: relative;
-    left: 202%;
+    position: absolute;
+    left: 89%;
+    top: 4%;
   }
   .heading {
     position: static;
-    /* width: 327px; */
     height: 150px;
     left: 24px;
     top: 114px;
@@ -557,6 +551,15 @@
     border-radius: 0px;
     padding-top: 3px;
   }
+  .portfolio{
+    align-items: center;
+    margin: 10px;
+  }
+  .iconimg{
+    position: absolute;
+    right: 29px;
+  }
+
 
   .container {
     display: flex;
@@ -645,7 +648,7 @@
     flex-wrap: wrap;
     color: #344563;
     font-weight: 400;
-    font-size: 15px;
+    font-size: 16px;
     line-height: 24px;
   }
   .links {
