@@ -410,7 +410,14 @@
     border: 1px solid #cfd8dc;
     box-shadow: 5px 5px #8490a7;
   }
-<<<<<<< HEAD
+
+  .websnap,
+  .websnap1 {
+    animation: fadeIn linear 2s;
+    opacity: 0;
+    animation-fill-mode: forwards;
+  }
+
   .pro:hover {
     animation: colorfull linear 2s;
     animation-fill-mode: forwards;
@@ -426,26 +433,6 @@
     }
   }
 
-  
-=======
-
-  .websnap,
-  .websnap1 {
-    animation: fadeIn linear 2s;
-    opacity: 0;
-    animation-fill-mode: forwards;
-  }
-
-  @keyframes fadeIn {
-    0% {
-      opacity: 0;
-    }
-
-    100% {
-      opacity: 100;
-    }
-  }
->>>>>>> de147babe9ec0588baed5c2f46d654c06959e61e
 }
 
 @media only screen and (max-width: 768px) {
