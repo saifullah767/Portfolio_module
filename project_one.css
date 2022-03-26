@@ -454,8 +454,9 @@
     display: flex;
     font-size: 28px;
     color: #a164f1;
-    position: relative;
-    left: 202%;
+    position: absolute;
+    right: 4%;
+    top: 4%;
   }
   .heading {
     position: static;
@@ -644,6 +645,10 @@
   .links {
     margin-bottom: 5px;
     width: 56%;
+  }
+  .iconimg{
+    position: absolute;
+    right: 38px;
   }
   .link {
     display: grid;
