@@ -100,7 +100,6 @@
     flex-direction: column;
     justify-content: center;
   }
-
   .card {
     display: flex;
     flex-wrap: wrap;
@@ -175,7 +174,6 @@
     width: 10px;
     padding-top: 3px;
   }
-
   .link {
     display: grid;
     grid-row: 1;
@@ -202,7 +200,6 @@
     font-size: 12px;
     line-height: 16px;
   }
-
   .para {
     display: flex;
     flex-wrap: wrap;
@@ -369,7 +366,6 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    
     padding: 5px;
     width: 73%;
   }
@@ -429,10 +425,6 @@
   nav ul {
     display: none;
   }
-  /* .container {
-    width: 100%;
-  } */
-
   .pageone {
     background-color: #ffffff;
     font-family: "Poppins", sans-serif;
@@ -624,16 +616,7 @@
     width: 10px;
     padding-top: 3px;
   }
-
-  .link {
-    display: grid;
-    grid-row: 1;
-    gap: 10px;
-    color: black;
-    text-decoration: none;
-  }
-  .links
-  ul{
+  .links ul {
     display: grid;
     grid-row: 1;
     gap: 10px;
@@ -655,6 +638,9 @@
     margin-bottom: 26px;
   }
   .link {
+    display: grid;
+    grid-row: 1;
+    gap: 10px;
     background-color: #ebebff;
     border-radius: 8px;
     padding: 5px;
@@ -666,8 +652,6 @@
     font-size: 12px;
     line-height: 16px;
   }
-
-
   .pro {
     color: #396df2;
     border-radius: 8px;
@@ -714,7 +698,7 @@
     color: black;
     text-decoration: none;
   }
-  .about_right ul{
+  .about_right ul {
     list-style: none;
     padding-left: 0px;
   }
@@ -726,7 +710,6 @@
     padding-left: 0px;
   }
   .lang ul {
-  
     margin-top: 25px;
     position: relative;
     left: 8px;
