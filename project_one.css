@@ -247,14 +247,8 @@
     width: 60%;
   }
   .iconimg {
-    position: relative;
-    left: 233px;
-    top: 1px;
-  }
-  .iconimg1 {
-    position: relative;
-    left: 290px;
-    top: 6px;
+    position: absolute;
+    right: 124px;
   }
   .about_right ul {
     list-style: none;
@@ -465,7 +459,6 @@
   }
   .heading {
     position: static;
-    /* width: 327px; */
     height: 150px;
     left: 24px;
     top: 114px;
