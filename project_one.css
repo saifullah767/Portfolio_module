@@ -459,10 +459,12 @@
     display: flex;
     font-size: 28px;
     color: #a164f1;
+    position: relative;
+    left: 202%;
   }
   .heading {
     position: static;
-    width: 327px;
+    /* width: 327px; */
     height: 150px;
     left: 24px;
     top: 114px;
@@ -494,7 +496,7 @@
   }
   .connect {
     position: relative;
-    width: 117px;
+    /* width: 117px; */
     height: 24px;
     left: 20px;
     top: 15px;
@@ -508,8 +510,9 @@
   .content {
     background-image: url("./images/header-shapes.png ");
     background-repeat: no-repeat;
+    background-size: cover;
     height: 604.0000610351562px;
-    width: 375px;
+    /* width: 375px; */
     left: 0px;
     top: 92px;
     border-radius: 0px;
@@ -562,16 +565,21 @@
     grid-column-start: 1;
     grid-auto-rows: max-content;
     row-gap: 50px;
-    width: 82%;
+    /* width: 82%; */
   }
   .card {
     background-color: #ffffff;
-    left: 24px;
-    top: 114px;
-    border-radius: 16px;
-    padding-bottom: 28px;
-    padding-top: 15px;
     text-align: left;
+    padding-top: 15px;
+    border-radius: 16px;
+    /* left: 24px;
+    top: 114px;
+    padding-bottom: 28px;
+    justify-content: center; */
+  }
+  .snap img {
+    width: 90%;
+    display: flex;
     justify-content: center;
   }
   .snap {
@@ -640,15 +648,17 @@
     line-height: 24px;
   }
   .links {
-    margin-bottom: 26px;
+    margin-bottom: 5px;
+    width: 56%;
   }
   .link {
     display: grid;
     grid-row: 1;
+    justify-content: center;
     gap: 10px;
     background-color: #ebebff;
     border-radius: 8px;
-    padding: 5px;
+    padding: 7px;
     text-decoration: none;
     color: #6070ff;
     font-family: "Poppins", sans-serif;
@@ -666,7 +676,8 @@
     font-style: normal;
     margin-top: 10px;
     border: 1px solid #6070ff;
-    box-sizing: border-box;
+    position: relative;
+    bottom: 12px;
   }
   .pro:hover {
     background-color: #6070ff;
@@ -677,8 +688,7 @@
     border-top-right-radius: 86px;
     background-color: #ffffff;
     height: 1020px;
-    width: 375px;
-    margin-top: 130px;
+    /* width: 375px; */
     padding: 10px;
     font-family: "Poppins", sans-serif;
   }
@@ -696,12 +706,11 @@
   }
   .icons ul,
   .icon {
-    display: grid;
-
-    grid-row: 1;
-
     color: black;
     text-decoration: none;
+    display: flex;
+    padding-left: 0px;
+    gap: 18px;
   }
   .about_right ul {
     list-style: none;
@@ -756,7 +765,7 @@
     background-position-x: right;
     border-radius: 60px 0px 0px 0px;
     height: 779px;
-    width: 375px;
+    /* width: 375px; */
     display: flex;
     flex-direction: column;
     justify-content: center;
