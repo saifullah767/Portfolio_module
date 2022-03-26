@@ -227,11 +227,6 @@
     border: 1px solid #6070ff;
     box-sizing: border-box;
   }
-  .pro:hover {
-    background-color: #6070ff;
-    color: #ebebff;
-    box-shadow: 5px 5px #dde2eb;
-  }
   .about {
     border-top-right-radius: 86px;
     background-color: #ffffff;
@@ -409,6 +404,21 @@
     border: 1px solid #cfd8dc;
     box-shadow: 5px 5px #8490a7;
   }
+  .pro:hover {
+    animation: colorfull linear 2s;
+    animation-fill-mode: forwards;
+  }
+
+  @keyframes colorfull {
+    0% {
+      background-color: white;
+    }
+
+    100% {
+      background-color: #6070ff;;
+    }
+  }
+
 }
 
 @media only screen and (max-width: 768px) {
