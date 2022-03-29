@@ -44,7 +44,7 @@
     display: flex;
     align-items: center;
     text-align: center;
-    color: #7847FF;
+    color: #7847ff;
     padding: 23px;
     text-decoration: none;
   }
@@ -52,6 +52,17 @@
     background-image: url("./images/Headweb.png");
     background-repeat: no-repeat;
     background-size: 100% 100%;
+  }
+  @keyframes head {
+    from {
+      margin-left: 100%;
+      width: 300%;
+    }
+
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
   }
   .content h1 {
     position: relative;
@@ -61,6 +72,12 @@
     font-size: 40px;
     line-height: 60px;
     color: #172b4d;
+    transition: all 2s linear;
+    animation-duration: 3s;
+    animation-name: head;
+  }
+  .content h1:hover {
+    transform: scale(1.2);
   }
   .content .para_text {
     position: relative;
@@ -81,7 +98,7 @@
     font-weight: 500;
     font-size: 16px;
     line-height: 24px;
-    color: #7847FF;
+    color: #7847ff;
     text-decoration: none;
   }
   .content ul {
@@ -159,7 +176,7 @@
     line-height: 16px;
   }
   .side {
-    color: #6B759B;
+    color: #6b759b;
     font-weight: 600;
     font-size: 13px;
     line-height: 16px;
@@ -193,7 +210,7 @@
     background-color: #ebebff;
     border-radius: 8px;
     text-decoration: none;
-    color: #7660B5;
+    color: #7660b5;
     font-family: "Poppins", sans-serif;
     font-style: normal;
     font-weight: 500;
@@ -317,7 +334,7 @@
   }
 
   .contact {
-    background-color: #6052FF;
+    background-color: #6052ff;
     background-image: url(./images/contactweb.png);
     background-repeat: no-repeat;
     background-size: 100%;
@@ -647,7 +664,7 @@
     margin-bottom: 5px;
     width: 56%;
   }
-  .iconimg{
+  .iconimg {
     position: absolute;
     right: 38px;
   }
