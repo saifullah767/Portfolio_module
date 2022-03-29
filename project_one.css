@@ -44,7 +44,7 @@
     display: flex;
     align-items: center;
     text-align: center;
-    color: #1E0909;
+    color: #7847FF;
     padding: 23px;
     text-decoration: none;
   }
@@ -81,7 +81,7 @@
     font-weight: 500;
     font-size: 16px;
     line-height: 24px;
-    color: #7f8cff;
+    color: #7847FF;
     text-decoration: none;
   }
   .content ul {
@@ -159,7 +159,7 @@
     line-height: 16px;
   }
   .side {
-    color: #7a869a;
+    color: #6B759B;
     font-weight: 600;
     font-size: 13px;
     line-height: 16px;
@@ -193,7 +193,7 @@
     background-color: #ebebff;
     border-radius: 8px;
     text-decoration: none;
-    color: #6070ff;
+    color: #7660B5;
     font-family: "Poppins", sans-serif;
     font-style: normal;
     font-weight: 500;
@@ -317,7 +317,7 @@
   }
 
   .contact {
-    background-color: #6070ff;
+    background-color: #6052FF;
     background-image: url(./images/contactweb.png);
     background-repeat: no-repeat;
     background-size: 100%;
