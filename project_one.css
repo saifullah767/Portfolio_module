@@ -473,6 +473,19 @@
     float: right;
     margin-top: -18px;
   }
+
+  .por {
+    margin-top: 40px;
+  }
+
+  #myLinks a {
+    color: #ffffff;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 32px;
+    display: block;
+  }
+
   /* header {
     display: flex;
     justify-content: space-between;
