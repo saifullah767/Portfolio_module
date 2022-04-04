@@ -23,7 +23,13 @@
         <header class="header" id="pageone">
           <nav class="logo">
             <a href="#" class="logo1"> My Logo </a>
-            <a class="menu" class="icon">
+            <a
+            class="menu"
+            id="menu"
+            href="javascript:void(0);"
+            class="icon"
+            onclick="menu_btn()"
+            >
               <img src="./icons/Menu.png" alt="Menu button" />
             </a>
             <ul>
@@ -34,13 +40,18 @@
           </nav>
         </header>
         <div id="myLinks">
-          <a id="menu" class="icon">
+          <a
+    id="menu"
+    href="javascript:void(0);"
+    class="icon"
+    onclick="menu_btn()"
+  >
             <img src="./images/Close_menu.svg" alt="close botton" />
           </a>
 
-          <a href="#portfolio" class="por focusable">Portfolio</a>
-          <a href="#about" class="focusable">About</a>
-          <a href="#contact" class="focusable">Contact</a>
+          <a href="#portfolio" onclick="menu_btn()" class="por focusable">Portfolio</a>
+          <a href="#about" onclick="menu_btn()" class="focusable">About</a>
+          <a href="#contact" onclick="menu_btn()" class="focusable">Contact</a>
         </div>
 
         <section class="content" id="blur">
@@ -342,5 +353,6 @@
         </div>
       </section>
     </section>
+    <script src="index.js"></script>
   </body>
 </html>
