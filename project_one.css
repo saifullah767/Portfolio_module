@@ -34,9 +34,9 @@
     color: #344563;
   }
 
-#myLinks {
-  display:none;
-}
+  #myLinks {
+    display: none;
+  }
 
   .logo1 {
     width: 76px;
@@ -233,6 +233,7 @@
   .links {
     margin-bottom: 26px;
   }
+
   .webcard {
     display: flex;
     flex-direction: row-reverse;
@@ -485,16 +486,9 @@
     font-size: 32px;
     display: block;
   }
-
-  /* header {
-    display: flex;
-    justify-content: space-between;
-    padding: 0.3rem;
+  .close_btn {
+    float: right;
   }
-  header div {
-    position: relative;
-    left: 15rem;
-  } */
   .logo1 {
     position: static;
     width: 76px;
@@ -518,7 +512,7 @@
     color: #a164f1;
     position: absolute;
     right: 4%;
-    top: 2%;
+    top: 4%;
     border: none;
     background-color: #ffffff;
   }
