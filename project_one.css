@@ -426,6 +426,9 @@
     border: 1px solid #cfd8dc;
     box-shadow: 5px 5px #8490a7;
   }
+  #menu_btn {
+    display: none;
+  }
 }
 
 @media only screen and (max-width: 768px) {
@@ -436,13 +439,21 @@
   }
   nav ul {
     display: none;
+    margin-top: 50px;
+    padding-left: 0px;
+    list-style: none;
+    position: absolute;
   }
+  nav ul a {
+    text-decoration: none;
+  }
+
   .pageone {
     background-color: #ffffff;
     font-family: "Poppins", sans-serif;
     border-bottom-left-radius: 70px;
   }
-  header {
+  /* header {
     display: flex;
     justify-content: space-between;
     padding: 0.3rem;
@@ -450,7 +461,7 @@
   header div {
     position: relative;
     left: 15rem;
-  }
+  } */
   .logo1 {
     position: static;
     width: 76px;
@@ -474,7 +485,9 @@
     color: #a164f1;
     position: absolute;
     right: 4%;
-    top: 4%;
+    top: 2%;
+    border: none;
+    background-color: #ffffff;
   }
   .heading {
     position: static;
@@ -509,7 +522,6 @@
   }
   .connect {
     position: relative;
-    /* width: 117px; */
     height: 24px;
     left: 20px;
     top: 15px;
@@ -525,7 +537,6 @@
     background-repeat: no-repeat;
     background-size: cover;
     height: 604.0000610351562px;
-    /* width: 375px; */
     left: 0px;
     top: 92px;
     border-radius: 0px;
@@ -578,17 +589,12 @@
     grid-column-start: 1;
     grid-auto-rows: max-content;
     row-gap: 50px;
-    /* width: 82%; */
   }
   .card {
     background-color: #ffffff;
     text-align: left;
     padding-top: 15px;
     border-radius: 16px;
-    /* left: 24px;
-    top: 114px;
-    padding-bottom: 28px;
-    justify-content: center; */
   }
   .snap img {
     width: 90%;
@@ -705,7 +711,6 @@
     border-top-right-radius: 86px;
     background-color: #ffffff;
     height: 1020px;
-    /* width: 375px; */
     padding: 10px;
     font-family: "Poppins", sans-serif;
   }
@@ -782,7 +787,6 @@
     background-position-x: right;
     border-radius: 60px 0px 0px 0px;
     height: 779px;
-    /* width: 375px; */
     display: flex;
     flex-direction: column;
     justify-content: center;
