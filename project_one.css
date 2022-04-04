@@ -34,6 +34,10 @@
     color: #344563;
   }
 
+#myLinks {
+  display:none;
+}
+
   .logo1 {
     width: 76px;
     height: 20px;
