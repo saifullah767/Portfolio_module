@@ -457,6 +457,22 @@
     font-family: "Poppins", sans-serif;
     border-bottom-left-radius: 70px;
   }
+  #myLinks {
+    display: none;
+    z-index: 1;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(61, 89, 211, 0.9);
+    overflow-x: hidden;
+    transition: 0.5s;
+    width: 100%;
+  }
+  #myLinks #menu {
+    float: right;
+    margin-top: -18px;
+  }
   /* header {
     display: flex;
     justify-content: space-between;
