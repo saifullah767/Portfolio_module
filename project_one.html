@@ -11,23 +11,46 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <title>Saifullah portfolio</title>
   </head>
   <body>
     <section class="container">
       <div class="pageone">
-        <header class="header">
+        <header class="header" id="pageone">
           <nav class="logo">
             <a href="#" class="logo1"> My Logo </a>
-            <img class="menu" src="./icons/Menu.png" alt="Menu button" />
+            <a
+              class="menu"
+              id="menu"
+              href="javascript:void(0);"
+              onclick="menu_btn()"
+            >
+              <img src="./icons/Menu.png" alt="Menu button" />
+            </a>
             <ul>
-              <li><a href="#" class="focusable">Portfolio</a></li>
-              <li><a href="#" class="focusable">About</a></li>
-              <li><a href="#" class="focusable">Contact</a></li>
+              <li><a href="#portfolio" class="focusable">Portfolio</a></li>
+              <li><a href="#about" class="focusable">About</a></li>
+              <li><a href="#contact" class="focusable">Contact</a></li>
             </ul>
           </nav>
         </header>
-        <section class="content">
+        <div id="myLinks">
+          <a href="javascript:void(0);" class="close_btn" onclick="menu_btn()">
+            <img src="./images/Close_menu.svg" alt="close botton" />
+          </a>
+
+          <a href="#portfolio" onclick="menu_btn()" class="por focusable"
+            >Portfolio</a
+          >
+          <a href="#about" onclick="menu_btn()" class="focusable">About</a>
+          <a href="#contact" onclick="menu_btn()" class="focusable">Contact</a>
+        </div>
+
+        <section class="content" id="blur">
           <div class="content_set">
             <div>
               <h1 class="heading">
@@ -85,7 +108,7 @@
           </div>
         </section>
       </div>
-      <section class="portfolio">
+      <section class="portfolio" id="portfolio">
         <div class="card">
           <div class="snap">
             <img src="./images/Snap.png" alt="Project screenshot" />
@@ -222,7 +245,7 @@
       <br />
       <br />
 
-      <section class="about">
+      <section class="about" id="about">
         <div class="about_side">
           <h2 class="about_h">About</h2>
           <h2 class="about_h">Myself</h2>
@@ -288,7 +311,7 @@
           <hr />
         </div>
       </section>
-      <section class="contact">
+      <section class="contact" id="contact">
         <div class="web">
           <h2>Contact me</h2>
           <p>
@@ -326,5 +349,6 @@
         </div>
       </section>
     </section>
+    <script src="index.js"></script>
   </body>
 </html>
