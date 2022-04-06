@@ -20,7 +20,7 @@ const project1 = {
   description:
     "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
   featuredImage: "./Portoflio/Snapshoot1.png",
-  technologies: ["html", "CSS", "Boottrap", "Ruby on Rails"],
+  technologies: ["html", "CSS", "Javascript", "Github","Ruby","Bootstrap"],
   linkToLive:
     "https://saifullah767.github.io/Portfolio_module/project_one.html",
   linkToSource: "https://github.com/saifullah767/Portfolio_module.git",
@@ -30,7 +30,7 @@ const project2 = {
   description:
     "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
   featuredImage: "./Portoflio/Snapshoot4.png",
-  technologies: ["html", "Bootstrap", "Ruby on Rails"],
+  technologies: ["html", "CSS", "Javascript", "Github","Ruby","Bootstrap"],
   linkToLive:
     "https://saifullah767.github.io/Portfolio_module/project_one.html",
   linkToSource: "https://github.com/saifullah767/Portfolio_module.git",
@@ -41,7 +41,7 @@ const project3 = {
   description:
     "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
   featuredImage: "./Portoflio/Snapshoot3.png",
-  technologies: ["html", "CSS", "Boottrap", "Ruby on Rails"],
+  technologies: ["html", "CSS", "Javascript", "Github","Ruby","Bootstrap"],
   linkToLive:
     "https://saifullah767.github.io/Portfolio_module/project_one.html",
   linkToSource: "https://github.com/saifullah767/Portfolio_module.git",
@@ -52,7 +52,7 @@ const project4 = {
   description:
     "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
   featuredImage: "./Portoflio/Snapshoot2.png",
-  technologies: ["html", "Bootstrap", "Ruby on Rails"],
+  technologies: ["html", "CSS", "Javascript", "Github","Ruby","Bootstrap"],
   linkToLive:
     "https://saifullah767.github.io/Portfolio_module/project_one.html",
   linkToSource: "https://github.com/saifullah767/Portfolio_module.git",
@@ -94,14 +94,14 @@ function popup() {
     const theList = document.querySelector(".links-pop");
     theList.innerHTML = `
 <ul>
-<li class='link'>html</li>
-<li class='link'>css</li>
-<li class='link'>javaScript</li>
+<li class='link'>${project1.technologies[0]}</li>
+<li class='link'>${project1.technologies[1]}</li>
+<li class='link'>${project1.technologies[2]}</li>
 </ul>
 <ul>
-<li class='link hide_ul'>Github</li>
-<li class='link hide_ul'>Ruby</li>
-<li class='link hide_ul'>Boostrap</li>
+<li class='link hide_ul'>${project1.technologies[3]}</li>
+<li class='link hide_ul'>${project1.technologies[4]}</li>
+<li class='link hide_ul'>${project1.technologies[5]}</li>
 </ul>
 <hr>
 <div class='popup-a' >
@@ -150,19 +150,19 @@ function popup_project2() {
     const theList = document.querySelector(".links-pop");
     theList.innerHTML = `
 <ul>
-<li class='link'>html</li>
-<li class='link'>css</li>
-<li class='link'>javaScript</li>
+<li class='link'>${project2.technologies[0]}</li>
+<li class='link'>${project2.technologies[1]}</li>
+<li class='link'>${project2.technologies[2]}</li>
 </ul>
 <ul>
-<li class='link hide_ul'>Github</li>
-<li class='link hide_ul'>Ruby</li>
-<li class='link hide_ul'>Boostrap</li>
+<li class='link hide_ul'>${project2.technologies[3]}</li>
+<li class='link hide_ul'>${project2.technologies[4]}</li>
+<li class='link hide_ul'>${project2.technologies[5]}</li>
 </ul>
 <hr>
 <div class='popup-a' >
-<a href="${project1.linkToLive}" class="pro-pop focusable"> See Live <img class="btn_icon" src="./images/share.png" alt="icon"> </a>
-<a href="${project1.linkToSource}" class="pro-pop focusable"> See Source <img class="btn_icon" src="./images/github_purple.png" alt="icon"> </a>
+<a href="${project2.linkToLive}" class="pro-pop focusable"> See Live <img class="btn_icon" src="./images/share.png" alt="icon"> </a>
+<a href="${project2.linkToSource}" class="pro-pop focusable"> See Source <img class="btn_icon" src="./images/github_purple.png" alt="icon"> </a>
 `;
   } else {
     project.style.display = "none";
@@ -206,19 +206,19 @@ function popup_project3() {
     const theList = document.querySelector(".links-pop");
     theList.innerHTML = `
 <ul>
-<li class='link'>html</li>
-<li class='link'>css</li>
-<li class='link'>javaScript</li>
+<li class='link'>${project3.technologies[0]}</li>
+<li class='link'>${project3.technologies[1]}</li>
+<li class='link'>${project3.technologies[2]}</li>
 </ul>
 <ul>
-<li class='link hide_ul'>Github</li>
-<li class='link hide_ul'>Ruby</li>
-<li class='link hide_ul'>Boostrap</li>
+<li class='link hide_ul'>${project3.technologies[3]}</li>
+<li class='link hide_ul'>${project3.technologies[4]}</li>
+<li class='link hide_ul'>${project3.technologies[5]}</li>
 </ul>
 <hr>
 <div class='popup-a' >
-<a href="${project1.linkToLive}" class="pro-pop focusable"> See Live <img class="btn_icon" src="./images/share.png" alt="icon"> </a>
-<a href="${project1.linkToSource}" class="pro-pop focusable"> See Source <img class="btn_icon" src="./images/github_purple.png" alt="icon"> </a>
+<a href="${project3.linkToLive}" class="pro-pop focusable"> See Live <img class="btn_icon" src="./images/share.png" alt="icon"> </a>
+<a href="${project3.linkToSource}" class="pro-pop focusable"> See Source <img class="btn_icon" src="./images/github_purple.png" alt="icon"> </a>
 `;
   } else {
     project.style.display = "none";
@@ -262,19 +262,19 @@ function popup_project4() {
     const theList = document.querySelector(".links-pop");
     theList.innerHTML = `
 <ul>
-<li class='link'>html</li>
-<li class='link'>css</li>
-<li class='link'>javaScript</li>
+<li class='link'>${project4.technologies[0]}</li>
+<li class='link'>${project4.technologies[1]}</li>
+<li class='link'>${project4.technologies[2]}</li>
 </ul>
 <ul>
-<li class='link hide_ul'>Github</li>
-<li class='link hide_ul'>Ruby</li>
-<li class='link hide_ul'>Boostrap</li>
+<li class='link hide_ul'>${project4.technologies[3]}</li>
+<li class='link hide_ul'>${project4.technologies[4]}</li>
+<li class='link hide_ul'>${project4.technologies[5]}</li>
 </ul>
 <hr>
 <div class='popup-a' >
-<a href="${project1.linkToLive}" class="pro-pop focusable"> See Live <img class="btn_icon" src="./images/share.png" alt="icon"> </a>
-<a href="${project1.linkToSource}" class="pro-pop focusable"> See Source <img class="btn_icon" src="./images/github_purple.png" alt="icon"> </a>
+<a href="${project4.linkToLive}" class="pro-pop focusable"> See Live <img class="btn_icon" src="./images/share.png" alt="icon"> </a>
+<a href="${project4.linkToSource}" class="pro-pop focusable"> See Source <img class="btn_icon" src="./images/github_purple.png" alt="icon"> </a>
 `;
   } else {
     project.style.display = "none";
