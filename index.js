@@ -71,6 +71,7 @@ function menu_btn() {
   };
   
   let allProjects = [project1, project2, project3, project4];
+
   function popup(){
     const project = document.getElementById("popup");
     
@@ -97,13 +98,15 @@ const theImage = document.querySelector(".pop-websnap");
 theImage.innerHTML = `
 <img  src="./Portoflio/Snapshoot1.png" alt="Project screenshot" />
 `;
-const nobImage = document.querySelector(".pop-mobile");
+
+/* const nobImage = document.querySelector(".pop-mobile");
 mobImage.innerHTML = `
 <img src="./images/Snap.png" alt="Project screenshot" />
-`;
+`; */
 
-const theText = document.querySelector(".pop-content");
-theText.innerHTML = `<p>${project1.description}</p>`;
+const paratext = document.querySelector(".pop-text");
+paratext.innerHTML = `
+<p> ${project1.description} </p>`;
 
 const theList = document.querySelector(".links-pop");
 theList.innerHTML = `
@@ -123,6 +126,7 @@ theList.innerHTML = `
 <a href="${project1.linkToSource}" class="pro-pop focusable"> See Source <img class="btn_icon" src="./images/github_purple.png" alt="icon"> </a>
 `;
   }
+
 else {
   project.style.display = "none";
   b.style.filter = "none";
