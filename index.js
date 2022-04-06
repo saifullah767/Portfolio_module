@@ -15,12 +15,14 @@ function menu_btn() {
     body.style.overflowY = "scroll";
   }
 }
+
+
 const project1 = {
   name: "Tonic",
   description:
     "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
   featuredImage: "./Portoflio/Snapshoot1.png",
-  technologies: ["html", "CSS", "Javascript", "Github","Ruby","Bootstrap"],
+  technologies: ["html", "CSS", "Javascript", "Github", "Ruby", "Bootstrap"],
   linkToLive:
     "https://saifullah767.github.io/Portfolio_module/project_one.html",
   linkToSource: "https://github.com/saifullah767/Portfolio_module.git",
@@ -30,7 +32,7 @@ const project2 = {
   description:
     "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
   featuredImage: "./Portoflio/Snapshoot4.png",
-  technologies: ["html", "CSS", "Javascript", "Github","Ruby","Bootstrap"],
+  technologies: ["html", "CSS", "Javascript", "Github", "Ruby", "Bootstrap"],
   linkToLive:
     "https://saifullah767.github.io/Portfolio_module/project_one.html",
   linkToSource: "https://github.com/saifullah767/Portfolio_module.git",
@@ -41,7 +43,7 @@ const project3 = {
   description:
     "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
   featuredImage: "./Portoflio/Snapshoot3.png",
-  technologies: ["html", "CSS", "Javascript", "Github","Ruby","Bootstrap"],
+  technologies: ["html", "CSS", "Javascript", "Github", "Ruby", "Bootstrap"],
   linkToLive:
     "https://saifullah767.github.io/Portfolio_module/project_one.html",
   linkToSource: "https://github.com/saifullah767/Portfolio_module.git",
@@ -52,7 +54,7 @@ const project4 = {
   description:
     "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
   featuredImage: "./Portoflio/Snapshoot2.png",
-  technologies: ["html", "CSS", "Javascript", "Github","Ruby","Bootstrap"],
+  technologies: ["html", "CSS", "Javascript", "Github", "Ruby", "Bootstrap"],
   linkToLive:
     "https://saifullah767.github.io/Portfolio_module/project_one.html",
   linkToSource: "https://github.com/saifullah767/Portfolio_module.git",
