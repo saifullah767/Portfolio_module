@@ -16,138 +16,134 @@ function menu_btn() {
     body.style.overflowY = "scroll"
   }
 }
-function popup(){
-  const project = document.getElementById("popup");
+// function popup(){
+//   const project = document.getElementById("popup");
 
-  if (project.style.display === "none") {
-    project.style.display = "flex";
-    project.style.overflowY = "scroll";
-    b.style.filter = "blur(2px)";
-    c.style.filter = "blur(2px)";
-    body.style.overflowY = "hidden";
-  } else {
-    project.style.display = "none";
-    b.style.filter = "none";
-    c.style.filter = "none";
-    body.style.overflowY = "scroll";
+//   if (project.style.display === "none") {
+//     project.style.display = "flex";
+//     project.style.overflowY = "scroll";
+//     b.style.filter = "blur(2px)";
+//     c.style.filter = "blur(2px)";
+//     body.style.overflowY = "hidden";
+//   } else {
+//     project.style.display = "none";
+//     b.style.filter = "none";
+//     c.style.filter = "none";
+//     body.style.overflowY = "scroll";
+//   }
+// }
+  const project1 = {
+    name: "Tonic",
+    description:
+    "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
+    technologies: ["html","CSS" , "Boottrap", "Ruby on Rails"],
+    linkToLive: "https://saifullah767.github.io/Portfolio_module/project_one.html",
+    linkToSource: "https://github.com/saifullah767/Portfolio_module.git",
+  };
+  const project2 = {
+    name: "Multi-Post Stories",
+    description:
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
+    featuredImage: "image.jpg",
+    technologies: ["html", "Bootstrap", "Ruby on Rails"],
+    linkToLive: "https://saifullah767.github.io/Portfolio_module/project_one.html",
+    linkToSource: "https://github.com/saifullah767/Portfolio_module.git",
+  };
+  
+  const project3 = {
+    name: "Tonic",
+    description:
+    "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
+    featuredImage: "image.jpg",
+    technologies: ["html","CSS" , "Boottrap", "Ruby on Rails"],
+    linkToLive: "https://saifullah767.github.io/Portfolio_module/project_one.html",
+    linkToSource: "https://github.com/saifullah767/Portfolio_module.git",
+  };
+  
+  const project4 = {
+    name: "Multi-Post Stories",
+    description:
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
+    featuredImage: "image.jpg",
+    technologies: ["html", "Bootstrap", "Ruby on Rails"],
+    linkToLive: "https://saifullah767.github.io/Portfolio_module/project_one.html",
+    linkToSource: "https://github.com/saifullah767/Portfolio_module.git",
+  };
+  
+  let allProjects = [project1, project2, project3, project4];
+  function popup(){
+    const project = document.getElementById("popup");
+    
+    if (project.style.display === "none") {
+      project.style.display = "flex";
+      project.style.overflowY = "scroll";
+      b.style.filter = "blur(2px)";
+      c.style.filter = "blur(2px)";
+      body.style.overflowY = "hidden";
+      
+      let title = document.querySelector(".title-one");
+      title.innerHTML = `<h2>${project1.name}</h2>`;
+
+const canopy= document.querySelector(".canopy");
+canopy.innerHTML = `           
+ <span class="can-pop"> CANOPY </span>
+<img class="dot" src="./images/Counter.png" alt="" />
+<span class="side-pop"> BACK END DEV </span>
+<img class="dot" src="./images/Counter.png" alt="" />
+<span class="side-pop"> 2015 </span>
+`;
+
+const theImage = document.querySelector(".pop-websnap");
+theImage.innerHTML = `
+<img  src="./Portoflio/Snapshoot1.png" alt="Project screenshot" />
+`;
+const nobImage = document.querySelector(".pop-mobile");
+mobImage.innerHTML = `
+<img src="./images/Snap.png" alt="Project screenshot" />
+`;
+
+const theText = document.querySelector(".pop-content");
+theText.innerHTML = `<p>${project1.description}</p>`;
+
+const theList = document.querySelector(".links-pop");
+theList.innerHTML = `
+<ul>
+<li class='link'>html</li>
+<li class='link'>css</li>
+<li class='link'>javaScript</li>
+</ul>
+<ul>
+<li class='link hide_ul'>html</li>
+<li class='link hide_ul'>css</li>
+<li class='link hide_ul'>javaScript</li>
+</ul>
+<hr>
+<div class='popup-a' >
+<a href="${project1.linkToLive}" class="pro-pop focusable"> See Live <img class="btn_icon" src="./images/share.png" alt="icon"> </a>
+<a href="${project1.linkToSource}" class="pro-pop focusable"> See Source <img class="btn_icon" src="./images/github_purple.png" alt="icon"> </a>
+`;
+  }
+else {
+  project.style.display = "none";
+  b.style.filter = "none";
+  c.style.filter = "none";
+  body.style.overflowY = "scroll";
+}
   }
 
-  /*
+// const launch = document.querySelector(".gotoproject")
+// launch.innerHTML = `
+// <a href=${project1.linkToLive}>
+// <button class="btstyle pjbutton" type="button"><span>See Live <img src="./icons/export.png" alt="launch project"></span></button>
+//     </a>
+//   <a href=${project1.linkToSource}>
+//  <button class="btstyle pjbutton" type="button"><span>See Source <img src="./icons/github-w.png" alt="go to repo"></span></button>
+//  </a>
+// `;
+  
 
-const proyecto1 = {
-  name: "Multi-Post Stories",
-  description:
-    "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
-  featuredImage: "image.jpg",
-  technologies: ["html", "Bootstrap", "Ruby on Rails"],
-  linkToLive:
-    "https://alexpuente0https://github.com/alexpuente0/My-Portfolio/blob/main/README.md.github.io/My-Portfolio/",
-  linkToSource: "https://github.com/alexpuente0",
-};
-
-const proyecto2 = {
-  name: "Professional Art Printing Data",
-  description:
-    "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
-  featuredImage: "image.jpg",
-  technologies: ["html", "Bootstrap", "Ruby on Rails"],
-  linkToLive: "https://github.com/alexpuente0/My-Portfolio/blob/main/README.md",
-  linkToSource: "https://github.com/alexpuente0",
-};
-
-const proyecto3 = {
-  name: "Professional Art Printing Data",
-  description:
-    "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
-  featuredImage: "image.jpg",
-  technologies: ["html", "Bootstrap", "Ruby on Rails"],
-  linkToLive: "https://github.com/alexpuente0/My-Portfolio/blob/main/README.md",
-  linkToSource: "https://github.com/alexpuente0",
-};
-
-const proyecto4 = {
-  name: "Professional Art Printing Data",
-  description:
-    "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
-  featuredImage: "image.jpg",
-  technologies: ["html", "Bootstrap", "Ruby on Rails"],
-  linkToLive: "https://github.com/alexpuente0/My-Portfolio/blob/main/README.md",
-  linkToSource: "https://github.com/alexpuente0",
-};
-
-const proyecto5 = {
-  name: "Professional Art Printing Data",
-  description:
-    "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
-  featuredImage: "image.jpg",
-  technologies: ["html", "Bootstrap", "Ruby on Rails"],
-  linkToLive: "https://github.com/alexpuente0/My-Portfolio/blob/main/README.md",
-  linkToSource: "https://github.com/alexpuente0",
-};
-
-const proyecto6 = {
-  name: "Professional Art Printing Data",
-  description:
-    "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
-  featuredImage: "image.jpg",
-  technologies: ["html", "Bootstrap", "Ruby on Rails"],
-  linkToLive: "https://github.com/alexpuente0/My-Portfolio/blob/main/README.md",
-  linkToSource: "https://github.com/alexpuente0",
-};
-
-const proyecto7 = {
-  name: "Professional Art Printing Data",
-  description:
-    "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
-  featuredImage: "image.jpg",
-  technologies: ["html", "Bootstrap", "Ruby on Rails"],
-  linkToLive: "https://github.com/alexpuente0/My-Portfolio/blob/main/README.md",
-  linkToSource: "https://github.com/alexpuente0",
-}; 
-
-let allProjects = [proyecto1, proyecto2, proyecto3, proyecto4, proyecto5, proyecto6, proyecto7]
-
-function togglePopup() {
-document.getElementById("popup-1").classList.toggle("active");
-
-const title = document.querySelector(".projectname")
-title.innerHTML = `
- <h3>${proyecto1.name}</h3>
-`;
-
-const theList = document.querySelector(".ulist");
-theList.innerHTML = `
-               <ul class="poplist">
-                <li class="popitem">${proyecto1.technologies[0]}</li>
-                <li class="popitem">${proyecto1.technologies[1]}</li>
-                <li class="popitem">${proyecto1.technologies[2]}</li>
-              </ul>
-`;
-
-const theImage = document.querySelector(".imagesub");
-theImage.innerHTML = `
- <img class="popimage" src="./icons/popsnapshot.png" alt="default image of the project">
-`;
-
-const theText = document.querySelector(".projectext");
-theText.innerHTML = `
- <p>
-  ${proyecto1.description}
- </p>;
- `
-const launch = document.querySelector(".gotoproject")
-launch.innerHTML = `
- <a href=${proyecto1.linkToLive}>
-    <button class="btstyle pjbutton" type="button"><span>See Live <img src="./icons/export.png" alt="launch project"></span></button>
-    </a>
-  <a href=${proyecto1.linkToSource}>
- <button class="btstyle pjbutton" type="button"><span>See Source <img src="./icons/github-w.png" alt="go to repo"></span></button>
-    </a>
-`;
-
-} 
-
-
+ 
+/*
 
   */
-}
+

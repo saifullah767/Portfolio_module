@@ -443,20 +443,22 @@
     top: 0;
     left: 0;
     width: 100%;
+    height: 98%;
     z-index: 9;
-  
+    border-radius: 10px;
     }
 
   .pop-card {
     display: flex;
     flex-direction: column;
-    align-self: center;
     padding: 10px;
+    font-family: "Poppins", sans-serif;
     background: #ffffff;
-    overflow-x: hidden;
+    overflow-y: scroll;
     transition: 0.5s;
     width: 80%;
-    /* height: 80%; */
+    border-radius: 10px;
+    margin-top: 7px;
   }
   .pop-card h2 {
     margin: 0px;
@@ -497,8 +499,8 @@
   }
   .pop-content p {
     position: static;
-    width: 778px;
-  }
+    width: 58%;
+    }
   .links-pop {
     width: 40%;
   }
@@ -507,6 +509,8 @@
     display: grid;
     grid-row: 1;
     gap: 10px;
+    width: 70%;
+
   }
   .links-pop ul li {
     padding: 7px;
@@ -524,7 +528,7 @@
   .pro-pop {
     color: #396df2;
     border-radius: 8px;
-    padding: 5px;
+    padding: 7px;
     margin-right: 15px;
     text-decoration: none;
     font-family: "Poppins", sans-serif;
@@ -532,6 +536,11 @@
     margin-top: 10px;
     border: 1px solid #6070ff;
     box-sizing: border-box;
+  }
+  .btn_icon{
+    position: relative;
+    top: 0.3rem;
+
   }
   .close_pop img {
     float: right;
@@ -1003,20 +1012,16 @@
     width: 100%;
     height: 100%;
     z-index: 9;
-  
     }
 
   .pop-card {
     display: flex;
     flex-direction: column;
-    align-self: center;
     padding: 10px;
     font-family: "Poppins", sans-serif;
     background: #ffffff;
-    overflow-x: hidden;
     transition: 0.5s;
     width: 80%;
-    height: 100%;
   }
   .pop-card h2 {
     margin: 0px;
@@ -1076,6 +1081,11 @@
     margin-top: 10px;
     border: 1px solid #6070ff;
     box-sizing: border-box;
+  }
+  .btn_icon{
+    position: relative;
+    top: 0.3rem;
+
   }
   .close_pop img {
     float: right;
