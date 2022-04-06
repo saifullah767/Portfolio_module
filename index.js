@@ -99,9 +99,9 @@ function popup() {
 <li class='link'>javaScript</li>
 </ul>
 <ul>
-<li class='link hide_ul'>html</li>
-<li class='link hide_ul'>css</li>
-<li class='link hide_ul'>javaScript</li>
+<li class='link hide_ul'>Github</li>
+<li class='link hide_ul'>Ruby</li>
+<li class='link hide_ul'>Boostrap</li>
 </ul>
 <hr>
 <div class='popup-a' >
@@ -155,9 +155,9 @@ function popup_project2() {
 <li class='link'>javaScript</li>
 </ul>
 <ul>
-<li class='link hide_ul'>html</li>
-<li class='link hide_ul'>css</li>
-<li class='link hide_ul'>javaScript</li>
+<li class='link hide_ul'>Github</li>
+<li class='link hide_ul'>Ruby</li>
+<li class='link hide_ul'>Boostrap</li>
 </ul>
 <hr>
 <div class='popup-a' >
@@ -211,9 +211,9 @@ function popup_project3() {
 <li class='link'>javaScript</li>
 </ul>
 <ul>
-<li class='link hide_ul'>html</li>
-<li class='link hide_ul'>css</li>
-<li class='link hide_ul'>javaScript</li>
+<li class='link hide_ul'>Github</li>
+<li class='link hide_ul'>Ruby</li>
+<li class='link hide_ul'>Boostrap</li>
 </ul>
 <hr>
 <div class='popup-a' >
@@ -267,9 +267,9 @@ function popup_project4() {
 <li class='link'>javaScript</li>
 </ul>
 <ul>
-<li class='link hide_ul'>html</li>
-<li class='link hide_ul'>css</li>
-<li class='link hide_ul'>javaScript</li>
+<li class='link hide_ul'>Github</li>
+<li class='link hide_ul'>Ruby</li>
+<li class='link hide_ul'>Boostrap</li>
 </ul>
 <hr>
 <div class='popup-a' >
