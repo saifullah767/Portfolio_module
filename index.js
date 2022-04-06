@@ -93,6 +93,7 @@ canopy.innerHTML = `
 <span class="side-pop"> 2015 </span>
 `;
 
+
 const theImage = document.querySelector(".pop-websnap");
 theImage.innerHTML = `
 <img  src="./Portoflio/Snapshoot1.png" alt="Project screenshot" />
