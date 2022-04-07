@@ -5,14 +5,14 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
   }
   .menu {
     display: none;
   }
   .pageone {
-    background-color: #ffffff;
+    background-color: #fff;
   }
   nav {
     display: flex;
@@ -24,7 +24,7 @@
     list-style: none;
     display: flex;
     flex-direction: row;
-    padding-left: 0px;
+    padding-left: 0;
     padding-right: 50px;
   }
   nav a {
@@ -127,7 +127,7 @@
     flex-wrap: wrap;
     gap: 10px;
     margin: 57px 23px 11px 41px;
-    background-color: #ffffff;
+    background-color: #fff;
     border-radius: 16px;
     text-align: left;
     justify-content: start;
@@ -155,7 +155,7 @@
   }
 
   .main {
-    padding: 10px 10px 0px 0px;
+    padding: 10px 10px 0 0;
     font-family: "Poppins", sans-serif;
     position: relative;
     width: 32%;
@@ -256,9 +256,9 @@
   }
   .about {
     border-top-right-radius: 86px;
-    background-color: #ffffff;
+    background-color: #fff;
     display: flex;
-    margin: 130px 0px 0px 0px;
+    margin: 130px 0 0 0;
     padding: 108px;
     font-family: "Poppins", sans-serif;
   }
@@ -292,7 +292,7 @@
     display: flex;
     color: black;
     text-decoration: none;
-    padding-left: 0px;
+    padding-left: 0;
     gap: 27px;
   }
 
@@ -344,7 +344,7 @@
     background-repeat: no-repeat;
     background-size: 100%;
     height: 846px;
-    border-radius: 60px 0px 0px 0px;
+    border-radius: 60px 0 0 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -365,7 +365,7 @@
     font-size: 40px;
     line-height: 52px;
     font-family: "Poppins", sans-serif;
-    margin: 10px 0px 18px 27px;
+    margin: 10px 0 18px 27px;
   }
   .contact p {
     color: white;
@@ -453,7 +453,7 @@
     flex-direction: column;
     padding: 10px;
     font-family: "Poppins", sans-serif;
-    background: #ffffff;
+    background: #fff;
     overflow-y: scroll;
     transition: 0.5s;
     width: 80%;
@@ -462,7 +462,7 @@
     margin-bottom: 35px;
   }
   .pop-card h2 {
-    margin: 0px;
+    margin: 0;
   }
   .can-pop {
     color: #344563;
@@ -552,13 +552,13 @@
 @media only screen and (max-width: 768px) {
   body {
     background-color: #f7f7f9;
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
   }
   nav ul {
     display: none;
     margin-top: 50px;
-    padding-left: 0px;
+    padding-left: 0;
     list-style: none;
     position: absolute;
   }
@@ -567,7 +567,7 @@
   }
 
   .pageone {
-    background-color: #ffffff;
+    background-color: #fff;
     font-family: "Poppins", sans-serif;
     border-bottom-left-radius: 70px;
   }
@@ -593,7 +593,7 @@
   }
 
   #myLinks a {
-    color: #ffffff;
+    color: #fff;
     padding: 14px 16px;
     text-decoration: none;
     font-size: 32px;
@@ -627,7 +627,7 @@
     right: 4%;
     top: 4%;
     border: none;
-    background-color: #ffffff;
+    background-color: #fff;
   }
   .heading {
     position: static;
@@ -677,9 +677,9 @@
     background-repeat: no-repeat;
     background-size: cover;
     height: 604.0000610351562px;
-    left: 0px;
+    left: 0;
     top: 92px;
-    border-radius: 0px;
+    border-radius: 0;
   }
   .Social_link ul {
     display: flex;
@@ -691,7 +691,7 @@
     width: 19.985925674438477px;
     left: 24px;
     top: 470px;
-    border-radius: 0px;
+    border-radius: 0;
   }
   .logo {
     display: flex;
@@ -703,21 +703,21 @@
     width: 17.985200881958008px;
     left: 143px;
     top: 470px;
-    border-radius: 0px;
+    border-radius: 0;
   }
   .linkdein {
     height: 20.000062942504883px;
     width: 20.00014877319336px;
     left: 63px;
     top: 470px;
-    border-radius: 0px;
+    border-radius: 0;
   }
   .m {
     height: 16px;
     width: 20px;
     left: 103px;
     top: 472px;
-    border-radius: 0px;
+    border-radius: 0;
     padding-top: 3px;
   }
 
@@ -731,7 +731,7 @@
     row-gap: 50px;
   }
   .card {
-    background-color: #ffffff;
+    background-color: #fff;
     text-align: left;
     padding-top: 15px;
     border-radius: 16px;
@@ -792,7 +792,7 @@
     display: grid;
     grid-row: 1;
     gap: 10px;
-    padding-left: 0px;
+    padding-left: 0;
   }
   .links,
   li {
@@ -849,7 +849,7 @@
   }
   .about {
     border-top-right-radius: 86px;
-    background-color: #ffffff;
+    background-color: #fff;
     height: 1020px;
     padding: 10px;
     font-family: "Poppins", sans-serif;
@@ -871,19 +871,19 @@
     color: black;
     text-decoration: none;
     display: flex;
-    padding-left: 0px;
+    padding-left: 0;
     gap: 18px;
   }
   .about_right ul {
     list-style: none;
-    padding-left: 0px;
+    padding-left: 0;
   }
 
   .lang {
     margin-top: 25px;
     position: relative;
     left: 8px;
-    padding-left: 0px;
+    padding-left: 0;
   }
   .lang ul {
     margin-top: 25px;
@@ -925,7 +925,7 @@
     background-size: 60% 700px;
     background-repeat: no-repeat;
     background-position-x: right;
-    border-radius: 60px 0px 0px 0px;
+    border-radius: 60px 0 0 0;
     height: 779px;
     display: flex;
     flex-direction: column;
@@ -941,7 +941,7 @@
     align-items: center;
     text-align: center;
     font-family: "Poppins", sans-serif;
-    margin: 10px 0px 18px 27px;
+    margin: 10px 0 18px 27px;
   }
   .contact p {
     color: white;
@@ -1019,12 +1019,12 @@
     flex-direction: column;
     padding: 10px;
     font-family: "Poppins", sans-serif;
-    background: #ffffff;
+    background: #fff;
     transition: 0.5s;
     width: 80%;
   }
   .pop-card h2 {
-    margin: 0px;
+    margin: 0;
   }
   .can-pop {
     color: #344563;
