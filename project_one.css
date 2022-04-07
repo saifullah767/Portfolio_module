@@ -438,7 +438,7 @@
     display: none;
     flex-direction: column;
     align-items: center;
-    background-color: rgb(190 194 201 / 90%);
+    background-color: rgba(236, 236, 236, 0.9);
     position: fixed;
     top: 0;
     left: 0;
@@ -1002,7 +1002,7 @@
     box-shadow: 5px 5px #8490a7;
   }
   #popup {
-    display: flex;
+    display: none;
     flex-direction: column;
     align-items: center;
     background-color: rgba(236, 236, 236, 0.9);
