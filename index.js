@@ -1,4 +1,4 @@
-const body = document.body;
+const body = document.querySelector("body");
 const b = document.getElementById("pageone");
 const c = document.getElementById("blur");
 function menuBtn() {
@@ -22,7 +22,7 @@ const data = {
       key: 0,
       name: "Tonic",
       description:
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
+        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
       normaldesc:
         "A daily selection of privately personalized reads; no accounts or sign-ups required",
       featuredImage: "./Portoflio/Snapshoot1.png",
@@ -48,7 +48,7 @@ const data = {
       key: 1,
       name: "Multi-Post Stories",
       description:
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
+        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
       normaldesc:
         "A daily selection of privately personalized reads; no accounts or sign-ups required",
       featuredImage: "./Portoflio/Snapshoot4.png",
@@ -74,7 +74,7 @@ const data = {
       key: 3,
       name: "Tonic",
       description:
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
+        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
       normaldesc:
         "A daily selection of privately personalized reads; no accounts or sign-ups required",
       featuredImage: "./Portoflio/Snapshoot3.png",
@@ -100,7 +100,7 @@ const data = {
       key: 4,
       name: "Multi-Post Stories",
       description:
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
+        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
       normaldesc:
         "A daily selection of privately personalized reads; no accounts or sign-ups required",
       featuredImage: "./Portoflio/Snapshoot2.png",
@@ -131,33 +131,33 @@ function implementProject() {
   myProjects.forEach((project) => {
     const cardId = `card-button-${i + 1}`;
     Work.innerHTML += ` 
-      <div class="card">
-    <div class="snap">
-      <img src=${project.MobileImage} alt="Project screenshot" />
+      <div class='card'>
+    <div class='snap'>
+      <img src=${project.MobileImage} alt='Project screenshot' />
     </div>
-    <div class="websnap">
-      <img src=${project.featuredImage} alt="Project screenshot" />
+    <div class='websnap'>
+      <img src=${project.featuredImage} alt='Project screenshot' />
     </div>
-    <section class="main">
+    <section class='main'>
       <h2>${project.name}</h2>
-      <div class="mid">
-        <span class="can"> ${project.company} </span>
-        <img class="dot" src=${project.dot} alt="" />
-        <span class="side"> ${project.position} </span>
-        <img class="dot" src=${project.dot} alt="" />
-        <span class="side"> ${project.year} </span>
+      <div class='mid'>
+        <span class='can'> ${project.company} </span>
+        <img class='dot' src=${project.dot} alt='' />
+        <span class='side'> ${project.position} </span>
+        <img class='dot' src=${project.dot} alt='' />
+        <span class='side'> ${project.year} </span>
       </div>
-      <p class="para">
+      <p class='para'>
       ${project.normaldesc}
       </p>
-      <div class="links">
+      <div class='links'>
         <ul>
         <li class='link'>${project.technologies[0]}</li>
         <li class='link'>${project.technologies[1]}</li>
         <li class='link'>${project.technologies[2]}</li>
         </ul>
       </div>
-      <a onclick="popupProject()" id="${cardId}" type="button" class="pro focusable" >
+      <a onclick='popupProject()' id='${cardId}' type='button' class='pro focusable' >
         See Project
       </a>
     </section>
@@ -184,16 +184,16 @@ function popupProject() {
 
     const canopy = document.querySelector(".canopy");
     canopy.innerHTML = `           
-   <span class="can-pop"> CANOPY </span>
-  <img class="dot" src="./images/Counter.png" alt="" />
-  <span class="side-pop"> BACK END DEV </span>
-  <img class="dot" src="./images/Counter.png" alt="" />
-  <span class="side-pop"> 2015 </span>
+   <span class='can-pop'> CANOPY </span>
+  <img class='dot' src='./images/Counter.png' alt='' />
+  <span class='side-pop'> BACK END DEV </span>
+  <img class='dot' src='./images/Counter.png' alt='' />
+  <span class='side-pop'> 2015 </span>
   `;
 
     const theImage = document.querySelector(".pop-websnap");
     theImage.innerHTML = `
-  <img  src="${popProjects.featuredImage}" alt="Project screenshot" />
+  <img  src='${popProjects.featuredImage}' alt='Project screenshot' />
   `;
 
     const paratext = document.querySelector(".pop-text");
@@ -214,8 +214,8 @@ function popupProject() {
   </ul>
   <hr>
   <div class='popup-a' >
-  <a href="${popProjects.linkToLive}" class="pro-pop focusable"> See Live <img class="btn_icon" src="./images/share.png" alt="icon"> </a>
-  <a href="${popProjects.linkToSource}" class="pro-pop focusable"> See Source <img class="btn_icon" src="./images/github_purple.png" alt="icon"> </a>
+  <a href='${popProjects.linkToLive}' class='pro-pop focusable'> See Live <img class='btn_icon' src='./images/share.png' alt='icon'> </a>
+  <a href='${popProjects.linkToSource}' class='pro-pop focusable'> See Source <img class='btn_icon' src='./images/github_purple.png' alt='icon'> </a>
   `;
   } else {
     project.style.display = "none";
