@@ -1,7 +1,7 @@
 const body = document.querySelector('body');
 const b = document.getElementById('pageone');
 const c = document.getElementById('blur');
-function menuBtn() {
+function menuBtn(x) {
   const a = document.getElementById('myLinks');
   if (a.style.display === 'none') {
     a.style.display = 'block';
@@ -170,7 +170,7 @@ function implementProject() {
 implementProject();
 
 const popProjects = data.projects[0];
-function popupProject() {
+function popupProject(y) {
   const project = document.getElementById('popup');
   if (project.style.display === 'none') {
     project.style.display = 'flex';

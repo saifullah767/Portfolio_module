@@ -497,7 +497,7 @@
     display: none;
     flex-direction: column;
     align-items: center;
-    background-color: rgba(236, 236, 236, 0.9);
+    background-color: rgb(207 211 215 / 90%);
     position: fixed;
     top: 0;
     left: 0;
@@ -1135,7 +1135,7 @@
     display: none;
     flex-direction: column;
     align-items: center;
-    background-color: rgba(236, 236, 236, 0.9);
+    background-color: rgb(207 211 215 / 90%);
     position: fixed;
     top: 0;
     left: 0;
