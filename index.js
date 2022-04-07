@@ -13,54 +13,126 @@ function menu_btn() {
     b.style.filter = "none";
     c.style.filter = "none";
     body.style.overflowY = "scroll";
-  }
-}
-
-
-const project1 = {
+  }}
+  const data = {
+    projects: [ {
+      key: 0,
   name: "Tonic",
   description:
     "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
-  featuredImage: "./Portoflio/Snapshoot1.png",
+    normaldesc: "A daily selection of privately personalized reads; no accounts or sign-ups required",
+    featuredImage: "./Portoflio/Snapshoot1.png",
+  MobileImage: "./images/Snap.png",
   technologies: ["html", "CSS", "Javascript", "Github", "Ruby", "Bootstrap"],
+  company: "CANOPY",
+  position: "BACK END DEV",
+  year: "2015",
+  dot: "./images/Counter.png",
+  closebtn: "./images/closeIcon.png",
   linkToLive:
     "https://saifullah767.github.io/Portfolio_module/project_one.html",
   linkToSource: "https://github.com/saifullah767/Portfolio_module.git",
-};
-const project2 = {
+},
+ {
+  key: 1,
   name: "Multi-Post Stories",
   description:
     "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
-  featuredImage: "./Portoflio/Snapshoot4.png",
+    normaldesc:"A daily selection of privately personalized reads; no accounts or sign-ups required",
+    featuredImage: "./Portoflio/Snapshoot4.png",
+  MobileImage: "./images/Snap2.png",
+  company: "CANOPY",
+  position: "BACK END DEV",
+  year: "2015",
+  dot: "./images/Counter.png",
   technologies: ["html", "CSS", "Javascript", "Github", "Ruby", "Bootstrap"],
+  closebtn: "./images/closeIcon.png",
   linkToLive:
-    "https://saifullah767.github.io/Portfolio_module/project_one.html",
+  "https://saifullah767.github.io/Portfolio_module/project_one.html",
   linkToSource: "https://github.com/saifullah767/Portfolio_module.git",
-};
-
-const project3 = {
+},
+ {
+  key: 3,
   name: "Tonic",
   description:
     "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
-  featuredImage: "./Portoflio/Snapshoot3.png",
+    normaldesc:"A daily selection of privately personalized reads; no accounts or sign-ups required",
+    featuredImage: "./Portoflio/Snapshoot3.png",
+  MobileImage: "./images/Snap3.png",
+  company: "CANOPY",
+  position: "BACK END DEV",
+  year: "2015",
+  dot: "./images/Counter.png",
   technologies: ["html", "CSS", "Javascript", "Github", "Ruby", "Bootstrap"],
+  closebtn: "./images/closeIcon.png",
   linkToLive:
     "https://saifullah767.github.io/Portfolio_module/project_one.html",
-  linkToSource: "https://github.com/saifullah767/Portfolio_module.git",
-};
-
-const project4 = {
+    linkToSource: "https://github.com/saifullah767/Portfolio_module.git",
+  },
+{
+  key: 4,
   name: "Multi-Post Stories",
   description:
-    "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
+  "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
+  normaldesc:"A daily selection of privately personalized reads; no accounts or sign-ups required",
   featuredImage: "./Portoflio/Snapshoot2.png",
+  MobileImage: "./images/Snap4.png",
+  company: "CANOPY",
+  position: "BACK END DEV",
+  year: "2015",
+  dot: "./images/Counter.png",
   technologies: ["html", "CSS", "Javascript", "Github", "Ruby", "Bootstrap"],
+  closebtn: "./images/closeIcon.png",
   linkToLive:
-    "https://saifullah767.github.io/Portfolio_module/project_one.html",
+  "https://saifullah767.github.io/Portfolio_module/project_one.html",
   linkToSource: "https://github.com/saifullah767/Portfolio_module.git",
-};
-
-let allProjects = [project1, project2, project3, project4];
+},
+],
+};// console.log(data);
+const myProjects = data.projects;
+const Work = document.querySelector('#portfolio');
+function implementProject(){
+  let i=0 ;
+  myProjects.forEach((project) =>  {
+    const cardId = `card-button-${i + 1}`;
+    Work.innerHTML += ` 
+      <div class="card">
+    <div class="snap">
+      <img src=${project.MobileImage} alt="Project screenshot" />
+    </div>
+    <div class="websnap">
+      <img src=${project.featuredImage} alt="Project screenshot" />
+    </div>
+    <section class="main">
+      <h2>${project.name}</h2>
+      <div class="mid">
+        <span class="can"> ${project.company} </span>
+        <img class="dot" src=${project.dot} alt="" />
+        <span class="side"> ${project.position} </span>
+        <img class="dot" src=${project.dot} alt="" />
+        <span class="side"> ${project.year} </span>
+      </div>
+      <p class="para">
+      ${project.normaldesc}
+      </p>
+      <div class="links">
+        <ul>
+        <li class='link'>${project.technologies[0]}</li>
+        <li class='link'>${project.technologies[1]}</li>
+        <li class='link'>${project.technologies[2]}</li>
+        </ul>
+      </div>
+      <a data-key="${project.key}" id="${cardId}" type="button" class="pro focusable" >
+        See Project
+      </a>
+    </section>
+  </div>
+  <br/>
+` 
+    i += 1; 
+});
+}
+implementProject();
 
 function popup() {
   const project = document.getElementById("popup");
