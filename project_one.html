@@ -27,7 +27,7 @@
               class="menu"
               id="menu"
               href="javascript:void(0);"
-              onclick="menu_btn()"
+              onclick="menuBtn()"
             >
               <img src="./icons/Menu.png" alt="Menu button" />
             </a>
@@ -39,15 +39,15 @@
           </nav>
         </header>
         <div id="myLinks">
-          <a href="javascript:void(0);" class="close_btn" onclick="menu_btn()">
+          <a href="javascript:void(0);" class="close_btn" onclick="menuBtn()">
             <img src="./images/Close_menu.svg" alt="close botton" />
           </a>
 
-          <a href="#portfolio" onclick="menu_btn()" class="por focusable"
+          <a href="#portfolio" onclick="menuBtn()" class="por focusable"
             >Portfolio</a
           >
-          <a href="#about" onclick="menu_btn()" class="focusable">About</a>
-          <a href="#contact" onclick="menu_btn()" class="focusable">Contact</a>
+          <a href="#about" onclick="menuBtn()" class="focusable">About</a>
+          <a href="#contact" onclick="menuBtn()" class="focusable">Contact</a>
         </div>
 
         <section class="content" id="blur">
@@ -108,6 +108,31 @@
           </div>
         </section>
       </div>
+
+      <section id="popup">
+        <div class="pop-card">
+          <h2 class="title-one">Tonic</h2>
+
+          <a href="javascript:void(0);" class="close_pop">
+            <img
+              src="./images/closeIcon.png"
+              onclick="popup_project()"
+              alt="close botton"
+            />
+          </a>
+
+          <div class="canopy"></div>
+
+          <div class="pop-mobile"></div>
+
+          <div class="pop-websnap"></div>
+          <div class="pop-content">
+            <div class="pop-text"></div>
+
+            <div class="links-pop"></div>
+          </div>
+        </div>
+      </section>
       <section class="portfolio" id="portfolio"></section>
       <br />
       <br />

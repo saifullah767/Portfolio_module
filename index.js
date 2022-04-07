@@ -1,8 +1,8 @@
-let body = document. body;
-let b = document.getElementById("pageone");
-let c = document.getElementById("blur");
-function menu_btn() {
-  let a = document.getElementById("myLinks");
+const body = document.body;
+const b = document.getElementById("pageone");
+const c = document.getElementById("blur");
+function menuBtn() {
+  const a = document.getElementById("myLinks");
   if (a.style.display === "none") {
     a.style.display = "block";
     body.style.overflowY = "hidden";
@@ -16,7 +16,7 @@ function menu_btn() {
   }
 }
 
-let data = {
+const data = {
   projects: [
     {
       key: 0,
@@ -124,7 +124,7 @@ let data = {
     },
   ],
 };
-let myProjects = data.projects;
+const myProjects = data.projects;
 const Work = document.querySelector("#portfolio");
 function implementProject() {
   let i = 0;
@@ -157,7 +157,7 @@ function implementProject() {
         <li class='link'>${project.technologies[2]}</li>
         </ul>
       </div>
-      <a onclick="popup_project()" id="${cardId}" type="button" class="pro focusable" >
+      <a onclick="popupProject()" id="${cardId}" type="button" class="pro focusable" >
         See Project
       </a>
     </section>
@@ -169,8 +169,8 @@ function implementProject() {
 }
 implementProject();
 
-let popProjects = data.projects[0];
-function popup_project() {
+const popProjects = data.projects[0];
+function popupProject() {
   const project = document.getElementById("popup");
   if (project.style.display === "none") {
     project.style.display = "flex";
@@ -179,7 +179,7 @@ function popup_project() {
     c.style.filter = "blur(2px)";
     body.style.overflowY = "hidden";
 
-    let title = document.querySelector(".title-one");
+    const title = document.querySelector(".title-one");
     title.innerHTML = `<h2>${popProjects.name}</h2>`;
 
     const canopy = document.querySelector(".canopy");
