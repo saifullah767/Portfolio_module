@@ -1,4 +1,4 @@
-let body = document.body;
+let body = document. body;
 let b = document.getElementById("pageone");
 let c = document.getElementById("blur");
 function menu_btn() {
