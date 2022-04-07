@@ -1,3 +1,4 @@
+
 let body = document.body;
 let b = document.getElementById("pageone");
 let c = document.getElementById("blur");
@@ -14,7 +15,10 @@ function menu_btn() {
     c.style.filter = "none";
     body.style.overflowY = "scroll";
   }}
-  const data = {
+
+
+
+  let data = {
     projects: [ {
       key: 0,
   name: "Tonic",
@@ -88,8 +92,8 @@ function menu_btn() {
   linkToSource: "https://github.com/saifullah767/Portfolio_module.git",
 },
 ],
-};// console.log(data);
-const myProjects = data.projects;
+};
+let myProjects = data.projects;
 const Work = document.querySelector('#portfolio');
 function implementProject(){
   let i=0 ;
@@ -122,7 +126,7 @@ function implementProject(){
         <li class='link'>${project.technologies[2]}</li>
         </ul>
       </div>
-      <a data-key="${project.key}" id="${cardId}" type="button" class="pro focusable" >
+      <a onclick="popup_project()" id="${cardId}" type="button" class="pro focusable" >
         See Project
       </a>
     </section>
@@ -134,226 +138,62 @@ function implementProject(){
 }
 implementProject();
 
-function popup() {
-  const project = document.getElementById("popup");
-
-  if (project.style.display === "none") {
-    project.style.display = "flex";
-    project.style.overflowY = "scroll";
-    b.style.filter = "blur(2px)";
-    c.style.filter = "blur(2px)";
-    body.style.overflowY = "hidden";
-
-    let title = document.querySelector(".title-one");
-    title.innerHTML = `<h2>${project1.name}</h2>`;
-
-    const canopy = document.querySelector(".canopy");
-    canopy.innerHTML = `           
- <span class="can-pop"> CANOPY </span>
-<img class="dot" src="./images/Counter.png" alt="" />
-<span class="side-pop"> BACK END DEV </span>
-<img class="dot" src="./images/Counter.png" alt="" />
-<span class="side-pop"> 2015 </span>
-`;
-
-    const theImage = document.querySelector(".pop-websnap");
-    theImage.innerHTML = `
-<img  src="${project1.featuredImage}" alt="Project screenshot" />
-`;
-
-    const paratext = document.querySelector(".pop-text");
-    paratext.innerHTML = `
-<p> ${project1.description} </p>`;
-
-    const theList = document.querySelector(".links-pop");
-    theList.innerHTML = `
-<ul>
-<li class='link'>${project1.technologies[0]}</li>
-<li class='link'>${project1.technologies[1]}</li>
-<li class='link'>${project1.technologies[2]}</li>
-</ul>
-<ul>
-<li class='link hide_ul'>${project1.technologies[3]}</li>
-<li class='link hide_ul'>${project1.technologies[4]}</li>
-<li class='link hide_ul'>${project1.technologies[5]}</li>
-</ul>
-<hr>
-<div class='popup-a' >
-<a href="${project1.linkToLive}" class="pro-pop focusable"> See Live <img class="btn_icon" src="./images/share.png" alt="icon"> </a>
-<a href="${project1.linkToSource}" class="pro-pop focusable"> See Source <img class="btn_icon" src="./images/github_purple.png" alt="icon"> </a>
-`;
-  } else {
-    project.style.display = "none";
-    b.style.filter = "none";
-    c.style.filter = "none";
-    body.style.overflowY = "scroll";
-  }
+let popProjects =data.projects[0];
+function popup_project(){
+const project = document.getElementById("popup");
+    if (project.style.display === "none") {
+      project.style.display = "flex";
+      project.style.overflowY = "scroll";
+      b.style.filter = "blur(2px)";
+      c.style.filter = "blur(2px)";
+      body.style.overflowY = "hidden";
+  
+      let title = document.querySelector(".title-one");
+      title.innerHTML = `<h2>${popProjects.name}</h2>`;
+  
+      const canopy = document.querySelector(".canopy");
+      canopy.innerHTML = `           
+   <span class="can-pop"> CANOPY </span>
+  <img class="dot" src="./images/Counter.png" alt="" />
+  <span class="side-pop"> BACK END DEV </span>
+  <img class="dot" src="./images/Counter.png" alt="" />
+  <span class="side-pop"> 2015 </span>
+  `;
+  
+      const theImage = document.querySelector(".pop-websnap");
+      theImage.innerHTML = `
+  <img  src="${popProjects.featuredImage}" alt="Project screenshot" />
+  `;
+  
+      const paratext = document.querySelector(".pop-text");
+      paratext.innerHTML = `
+  <p> ${popProjects.description} </p>`;
+  
+      const theList = document.querySelector(".links-pop");
+      theList.innerHTML = `
+  <ul>
+  <li class='link'>${popProjects.technologies[0]}</li>
+  <li class='link'>${popProjects.technologies[1]}</li>
+  <li class='link'>${popProjects.technologies[2]}</li>
+  </ul>
+  <ul>
+  <li class='link hide_ul'>${popProjects.technologies[3]}</li>
+  <li class='link hide_ul'>${popProjects.technologies[4]}</li>
+  <li class='link hide_ul'>${popProjects.technologies[5]}</li>
+  </ul>
+  <hr>
+  <div class='popup-a' >
+  <a href="${popProjects.linkToLive}" class="pro-pop focusable"> See Live <img class="btn_icon" src="./images/share.png" alt="icon"> </a>
+  <a href="${popProjects.linkToSource}" class="pro-pop focusable"> See Source <img class="btn_icon" src="./images/github_purple.png" alt="icon"> </a>
+  `;
+    } else {
+      project.style.display = "none";
+      b.style.filter = "none";
+      c.style.filter = "none";
+      body.style.overflowY = "scroll";
+    }
+ 
+  
 }
 
-function popup_project2() {
-  const project = document.getElementById("popup");
 
-  if (project.style.display === "none") {
-    project.style.display = "flex";
-    project.style.overflowY = "scroll";
-    b.style.filter = "blur(2px)";
-    c.style.filter = "blur(2px)";
-    body.style.overflowY = "hidden";
-
-    let title = document.querySelector(".title-one");
-    title.innerHTML = `<h2>${project3.name}</h2>`;
-
-    const canopy = document.querySelector(".canopy");
-    canopy.innerHTML = `           
- <span class="can-pop"> CANOPY </span>
-<img class="dot" src="./images/Counter.png" alt="" />
-<span class="side-pop"> BACK END DEV </span>
-<img class="dot" src="./images/Counter.png" alt="" />
-<span class="side-pop"> 2015 </span>
-`;
-
-    const theImage = document.querySelector(".pop-websnap");
-    theImage.innerHTML = `
-<img  src="${project3.featuredImage}" alt="Project screenshot" />
-`;
-
-    const paratext = document.querySelector(".pop-text");
-    paratext.innerHTML = `
-<p> ${project3.description} </p>`;
-
-    const theList = document.querySelector(".links-pop");
-    theList.innerHTML = `
-<ul>
-<li class='link'>${project2.technologies[0]}</li>
-<li class='link'>${project2.technologies[1]}</li>
-<li class='link'>${project2.technologies[2]}</li>
-</ul>
-<ul>
-<li class='link hide_ul'>${project2.technologies[3]}</li>
-<li class='link hide_ul'>${project2.technologies[4]}</li>
-<li class='link hide_ul'>${project2.technologies[5]}</li>
-</ul>
-<hr>
-<div class='popup-a' >
-<a href="${project2.linkToLive}" class="pro-pop focusable"> See Live <img class="btn_icon" src="./images/share.png" alt="icon"> </a>
-<a href="${project2.linkToSource}" class="pro-pop focusable"> See Source <img class="btn_icon" src="./images/github_purple.png" alt="icon"> </a>
-`;
-  } else {
-    project.style.display = "none";
-    b.style.filter = "none";
-    c.style.filter = "none";
-    body.style.overflowY = "scroll";
-  }
-}
-
-function popup_project3() {
-  const project = document.getElementById("popup");
-
-  if (project.style.display === "none") {
-    project.style.display = "flex";
-    project.style.overflowY = "scroll";
-    b.style.filter = "blur(2px)";
-    c.style.filter = "blur(2px)";
-    body.style.overflowY = "hidden";
-
-    let title = document.querySelector(".title-one");
-    title.innerHTML = `<h2>${project2.name}</h2>`;
-
-    const canopy = document.querySelector(".canopy");
-    canopy.innerHTML = `           
- <span class="can-pop"> CANOPY </span>
-<img class="dot" src="./images/Counter.png" alt="" />
-<span class="side-pop"> BACK END DEV </span>
-<img class="dot" src="./images/Counter.png" alt="" />
-<span class="side-pop"> 2015 </span>
-`;
-
-    const theImage = document.querySelector(".pop-websnap");
-    theImage.innerHTML = `
-<img  src="${project2.featuredImage}" alt="Project screenshot" />
-`;
-
-    const paratext = document.querySelector(".pop-text");
-    paratext.innerHTML = `
-<p> ${project2.description} </p>`;
-
-    const theList = document.querySelector(".links-pop");
-    theList.innerHTML = `
-<ul>
-<li class='link'>${project3.technologies[0]}</li>
-<li class='link'>${project3.technologies[1]}</li>
-<li class='link'>${project3.technologies[2]}</li>
-</ul>
-<ul>
-<li class='link hide_ul'>${project3.technologies[3]}</li>
-<li class='link hide_ul'>${project3.technologies[4]}</li>
-<li class='link hide_ul'>${project3.technologies[5]}</li>
-</ul>
-<hr>
-<div class='popup-a' >
-<a href="${project3.linkToLive}" class="pro-pop focusable"> See Live <img class="btn_icon" src="./images/share.png" alt="icon"> </a>
-<a href="${project3.linkToSource}" class="pro-pop focusable"> See Source <img class="btn_icon" src="./images/github_purple.png" alt="icon"> </a>
-`;
-  } else {
-    project.style.display = "none";
-    b.style.filter = "none";
-    c.style.filter = "none";
-    body.style.overflowY = "scroll";
-  }
-}
-
-function popup_project4() {
-  const project = document.getElementById("popup");
-
-  if (project.style.display === "none") {
-    project.style.display = "flex";
-    project.style.overflowY = "scroll";
-    b.style.filter = "blur(2px)";
-    c.style.filter = "blur(2px)";
-    body.style.overflowY = "hidden";
-
-    let title = document.querySelector(".title-one");
-    title.innerHTML = `<h2>${project4.name}</h2>`;
-
-    const canopy = document.querySelector(".canopy");
-    canopy.innerHTML = `           
- <span class="can-pop"> CANOPY </span>
-<img class="dot" src="./images/Counter.png" alt="" />
-<span class="side-pop"> BACK END DEV </span>
-<img class="dot" src="./images/Counter.png" alt="" />
-<span class="side-pop"> 2015 </span>
-`;
-
-    const theImage = document.querySelector(".pop-websnap");
-    theImage.innerHTML = `
-<img  src="${project4.featuredImage}" alt="Project screenshot" />
-`;
-
-    const paratext = document.querySelector(".pop-text");
-    paratext.innerHTML = `
-<p> ${project4.description} </p>`;
-
-    const theList = document.querySelector(".links-pop");
-    theList.innerHTML = `
-<ul>
-<li class='link'>${project4.technologies[0]}</li>
-<li class='link'>${project4.technologies[1]}</li>
-<li class='link'>${project4.technologies[2]}</li>
-</ul>
-<ul>
-<li class='link hide_ul'>${project4.technologies[3]}</li>
-<li class='link hide_ul'>${project4.technologies[4]}</li>
-<li class='link hide_ul'>${project4.technologies[5]}</li>
-</ul>
-<hr>
-<div class='popup-a' >
-<a href="${project4.linkToLive}" class="pro-pop focusable"> See Live <img class="btn_icon" src="./images/share.png" alt="icon"> </a>
-<a href="${project4.linkToSource}" class="pro-pop focusable"> See Source <img class="btn_icon" src="./images/github_purple.png" alt="icon"> </a>
-`;
-  } else {
-    project.style.display = "none";
-    b.style.filter = "none";
-    c.style.filter = "none";
-    body.style.overflowY = "scroll";
-  }
-}
