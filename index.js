@@ -126,9 +126,9 @@ function implementProject(){
         <li class='link'>${project.technologies[2]}</li>
         </ul>
       </div>
-      <a onclick="popup_project()" id="${cardId}" type="button" class="pro focusable" >
+      <button data-key="${project.key}" id="${cardId}" onclick="openPopup()" type="button" class="pro focusable" >
         See Project
-      </a>
+      </button>
     </section>
   </div>
   <br/>
@@ -138,62 +138,140 @@ function implementProject(){
 }
 implementProject();
 
-let popProjects =data.projects[0];
-function popup_project(){
-const project = document.getElementById("popup");
-    if (project.style.display === "none") {
-      project.style.display = "flex";
-      project.style.overflowY = "scroll";
-      b.style.filter = "blur(2px)";
-      c.style.filter = "blur(2px)";
-      body.style.overflowY = "hidden";
+function openPopup() {
+  const allCardButtons = document.querySelectorAll("[id*='card-button']");
+
+  let i = 0;
+  myProjects.forEach((project) => {
+    allCardButtons[i].addEventListener('click', () => {
+      const popupElement = document.createElement('div');
+
+      popupElement.id = 'openPopUp';
+      popupElement.setAttribute('class', 'popup');
+      popupElement.innerHTML = `  
+      <div class="pop-card">
+      <h2 class="title-one"> ${project.name} </h2>
+
+      <a href="javascript:void(0);" class="close_pop">
+        <img
+        class="close_pop"
+          src="./images/closeIcon.png"
+          onclick="openPopup"
+          alt="close botton"
+        />
+      </a>
+
+      <div class="canopy">
+      <span class="can-pop"> CANOPY </span>
+      <img class="dot" src="./images/Counter.png" alt="" />
+      <span class="side-pop"> BACK END DEV </span>
+      <img class="dot" src="./images/Counter.png" alt="" />
+      <span class="side-pop"> 2015 </span>
+      </div>
+
+      <div class="pop-mobile">
+      <img  src=${project.MobileImage} alt="Project screenshot" />
+      </div>
+
+      <div class="pop-websnap">
+      <img  src=${project.featuredImage} alt="Project screenshot" />
+      </div>
+      <div class="pop-content">
+        <div class="pop-text">
+        <p> ${project.description} </p>
+        </div>
+
+        <div class="links-pop">  
+        <ul>
+        <li class='link'>${project.technologies[0]}</li>
+        <li class='link'>${project.technologies[1]}</li>
+        <li class='link'>${project.technologies[2]}</li>
+        </ul>
+        <ul>
+        <li class='link hide_ul'>${project.technologies[3]}</li>
+        <li class='link hide_ul'>${project.technologies[4]}</li>
+        <li class='link hide_ul'>${project.technologies[5]}</li>
+        </ul>
+        <hr>
+        <div class='popup-a'>
+        <a href="${project.linkToLive}" class="pro-pop focusable"> See Live <img class="btn_icon" src="./images/share.png" alt="icon"> </a>
+        <a href="${project.linkToSource}" class="pro-pop focusable"> See Source <img class="btn_icon" src="./images/github_purple.png" alt="icon"> </a>
+      </div>
+      </div>
+      </div>`;
+
+      Work.appendChild(popupElement);
+      document.querySelector('html').style.overflowY = 'hidden';
+      document.querySelector('#closeCard').addEventListener('click', () => {
+        const openPopUp = document.getElementById('openPopUp');
+        openPopUp.remove();
+        document.querySelector('html').style.overflowY = 'auto';
+      });
+    });
+
+    i += 1;
+  });
+}
+openPopup();
+
+
+
+// let popProjects =data.projects[0];
+// function popup_project(){
+// const project = document.getElementById("popup");
+//     if (project.style.display === "none") {
+//       project.style.display = "flex";
+//       project.style.overflowY = "scroll";
+//       b.style.filter = "blur(2px)";
+//       c.style.filter = "blur(2px)";
+//       body.style.overflowY = "hidden";
   
-      let title = document.querySelector(".title-one");
-      title.innerHTML = `<h2>${popProjects.name}</h2>`;
+//       let title = document.querySelector(".title-one");
+//       title.innerHTML = `<h2>${popProjects.name}</h2>`;
   
-      const canopy = document.querySelector(".canopy");
-      canopy.innerHTML = `           
-   <span class="can-pop"> CANOPY </span>
-  <img class="dot" src="./images/Counter.png" alt="" />
-  <span class="side-pop"> BACK END DEV </span>
-  <img class="dot" src="./images/Counter.png" alt="" />
-  <span class="side-pop"> 2015 </span>
-  `;
+//       const canopy = document.querySelector(".canopy");
+//       canopy.innerHTML = `           
+  //  <span class="can-pop"> CANOPY </span>
+  // <img class="dot" src="./images/Counter.png" alt="" />
+  // <span class="side-pop"> BACK END DEV </span>
+  // <img class="dot" src="./images/Counter.png" alt="" />
+  // <span class="side-pop"> 2015 </span>
+//   `;
   
-      const theImage = document.querySelector(".pop-websnap");
-      theImage.innerHTML = `
-  <img  src="${popProjects.featuredImage}" alt="Project screenshot" />
-  `;
+//       const theImage = document.querySelector(".pop-websnap");
+//       theImage.innerHTML = `
+//   <img  src="${popProjects.featuredImage}" alt="Project screenshot" />
+//   `;
   
-      const paratext = document.querySelector(".pop-text");
-      paratext.innerHTML = `
-  <p> ${popProjects.description} </p>`;
+//       const paratext = document.querySelector(".pop-text");
+//       paratext.innerHTML = `
+//   <p> ${popProjects.description} </p>`;
   
-      const theList = document.querySelector(".links-pop");
-      theList.innerHTML = `
-  <ul>
-  <li class='link'>${popProjects.technologies[0]}</li>
-  <li class='link'>${popProjects.technologies[1]}</li>
-  <li class='link'>${popProjects.technologies[2]}</li>
-  </ul>
-  <ul>
-  <li class='link hide_ul'>${popProjects.technologies[3]}</li>
-  <li class='link hide_ul'>${popProjects.technologies[4]}</li>
-  <li class='link hide_ul'>${popProjects.technologies[5]}</li>
-  </ul>
-  <hr>
-  <div class='popup-a' >
-  <a href="${popProjects.linkToLive}" class="pro-pop focusable"> See Live <img class="btn_icon" src="./images/share.png" alt="icon"> </a>
-  <a href="${popProjects.linkToSource}" class="pro-pop focusable"> See Source <img class="btn_icon" src="./images/github_purple.png" alt="icon"> </a>
-  `;
-    } else {
-      project.style.display = "none";
-      b.style.filter = "none";
-      c.style.filter = "none";
-      body.style.overflowY = "scroll";
-    }
+//       const theList = document.querySelector(".links-pop");
+//       theList.innerHTML = `
+  // <ul>
+  // <li class='link'>${popProjects.technologies[0]}</li>
+  // <li class='link'>${popProjects.technologies[1]}</li>
+  // <li class='link'>${popProjects.technologies[2]}</li>
+  // </ul>
+  // <ul>
+  // <li class='link hide_ul'>${popProjects.technologies[3]}</li>
+  // <li class='link hide_ul'>${popProjects.technologies[4]}</li>
+  // <li class='link hide_ul'>${popProjects.technologies[5]}</li>
+  // </ul>
+//   <hr>
+//   <div class='popup-a' >
+  // <a href="${popProjects.linkToLive}" class="pro-pop focusable"> See Live <img class="btn_icon" src="./images/share.png" alt="icon"> </a>
+  // <a href="${popProjects.linkToSource}" class="pro-pop focusable"> See Source <img class="btn_icon" src="./images/github_purple.png" alt="icon"> </a>
+//   `;
+//     } else {
+//       project.style.display = "none";
+//       b.style.filter = "none";
+//       c.style.filter = "none";
+//       body.style.overflowY = "scroll";
+//     }
  
   
-}
+// }
 
 
