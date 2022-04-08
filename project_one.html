@@ -206,12 +206,13 @@
       <section class="contact" id="contact">
         <div class="web">
           <h2>Contact me</h2>
-          <p>
+          <p class="contact_para" >
             If you have an application you are interested in developing, a
             feature that you need built or a project that needs coding. I'd love
             to help with it
           </p>
-          <form action="https://formspree.io/f/" method="post">
+          <!-- Change the Action to your form -->
+          <form action="https://formspree.io/f/xdobwonl" method="post" class="contact-form">
             <input
               type="text"
               name="user_name"
@@ -222,21 +223,23 @@
             />
             <input
               type="email"
+              class="contactme"
               name="user_email"
               id="email"
               placeholder="Enter your email"
               required
             />
             <textarea
-              name="message"
-              id="textarea"
-              maxlength="500"
-              cols="30"
+            name="message"
+            id="textarea"
+            maxlength="500"
+            cols="30"
               rows="5"
               required
               placeholder="Write your message here"
             ></textarea>
             <button type="submit" class="button focusable">Get It touch</button>
+            <p class="validate" > Email must in Lower case </p>
           </form>
         </div>
       </section>

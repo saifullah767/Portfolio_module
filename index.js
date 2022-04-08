@@ -224,3 +224,16 @@ function popupProject(y) {
     body.style.overflowY = 'scroll';
   }
 }
+
+const cform = document.querySelector('.contact-form');
+const errMessage = document.querySelector('.validate');
+const mail = document.querySelector('.contactme');
+
+cform.addEventListener('submit', (event) => {
+  event.preventDefault();
+  if (mail.value !== mail.value.toLowerCase()) {
+    errMessage.style.display = 'block';
+  } else {
+    cform.submit();
+  }
+});
