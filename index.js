@@ -1,18 +1,18 @@
-const body = document.querySelector("body");
-const b = document.getElementById("pageone");
-const c = document.getElementById("blur");
+const body = document.querySelector('body');
+const b = document.getElementById('pageone');
+const c = document.getElementById('blur');
 function menuBtn(x) {
-  const a = document.getElementById("myLinks");
-  if (a.style.display === "none") {
-    a.style.display = "block";
-    body.style.overflowY = "hidden";
-    b.style.filter = "blur(2px)";
-    c.style.filter = "blur(2px)";
+  const a = document.getElementById('myLinks');
+  if (a.style.display === 'none') {
+    a.style.display = 'block';
+    body.style.overflowY = 'hidden';
+    b.style.filter = 'blur(2px)';
+    c.style.filter = 'blur(2px)';
   } else {
-    a.style.display = "none";
-    b.style.filter = "none";
-    c.style.filter = "none";
-    body.style.overflowY = "scroll";
+    a.style.display = 'none';
+    b.style.filter = 'none';
+    c.style.filter = 'none';
+    body.style.overflowY = 'scroll';
   }
 }
 
@@ -20,112 +20,112 @@ const data = {
   projects: [
     {
       key: 0,
-      name: "Tonic",
+      name: 'Tonic',
       description:
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
+        'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
       normaldesc:
-        "A daily selection of privately personalized reads; no accounts or sign-ups required",
-      featuredImage: "./Portoflio/Snapshoot1.png",
-      MobileImage: "./images/Snap.png",
+        'A daily selection of privately personalized reads; no accounts or sign-ups required',
+      featuredImage: './Portoflio/Snapshoot1.png',
+      MobileImage: './images/Snap.png',
       technologies: [
-        "html",
-        "CSS",
-        "Javascript",
-        "Github",
-        "Ruby",
-        "Bootstrap",
+        'html',
+        'CSS',
+        'Javascript',
+        'Github',
+        'Ruby',
+        'Bootstrap',
       ],
-      company: "CANOPY",
-      position: "BACK END DEV",
-      year: "2015",
-      dot: "./images/Counter.png",
-      closebtn: "./images/closeIcon.png",
+      company: 'CANOPY',
+      position: 'BACK END DEV',
+      year: '2015',
+      dot: './images/Counter.png',
+      closebtn: './images/closeIcon.png',
       linkToLive:
-        "https://saifullah767.github.io/Portfolio_module/project_one.html",
-      linkToSource: "https://github.com/saifullah767/Portfolio_module.git",
+        'https://saifullah767.github.io/Portfolio_module/project_one.html',
+      linkToSource: 'https://github.com/saifullah767/Portfolio_module.git',
     },
     {
       key: 1,
-      name: "Multi-Post Stories",
+      name: 'Multi-Post Stories',
       description:
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
+        'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
       normaldesc:
-        "A daily selection of privately personalized reads; no accounts or sign-ups required",
-      featuredImage: "./Portoflio/Snapshoot4.png",
-      MobileImage: "./images/Snap2.png",
-      company: "CANOPY",
-      position: "BACK END DEV",
-      year: "2015",
-      dot: "./images/Counter.png",
+        'A daily selection of privately personalized reads; no accounts or sign-ups required',
+      featuredImage: './Portoflio/Snapshoot4.png',
+      MobileImage: './images/Snap2.png',
+      company: 'CANOPY',
+      position: 'BACK END DEV',
+      year: '2015',
+      dot: './images/Counter.png',
       technologies: [
-        "html",
-        "CSS",
-        "Javascript",
-        "Github",
-        "Ruby",
-        "Bootstrap",
+        'html',
+        'CSS',
+        'Javascript',
+        'Github',
+        'Ruby',
+        'Bootstrap',
       ],
-      closebtn: "./images/closeIcon.png",
+      closebtn: './images/closeIcon.png',
       linkToLive:
-        "https://saifullah767.github.io/Portfolio_module/project_one.html",
-      linkToSource: "https://github.com/saifullah767/Portfolio_module.git",
+        'https://saifullah767.github.io/Portfolio_module/project_one.html',
+      linkToSource: 'https://github.com/saifullah767/Portfolio_module.git',
     },
     {
       key: 3,
-      name: "Tonic",
+      name: 'Tonic',
       description:
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
+        'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
       normaldesc:
-        "A daily selection of privately personalized reads; no accounts or sign-ups required",
-      featuredImage: "./Portoflio/Snapshoot3.png",
-      MobileImage: "./images/Snap3.png",
-      company: "CANOPY",
-      position: "BACK END DEV",
-      year: "2015",
-      dot: "./images/Counter.png",
+        'A daily selection of privately personalized reads; no accounts or sign-ups required',
+      featuredImage: './Portoflio/Snapshoot3.png',
+      MobileImage: './images/Snap3.png',
+      company: 'CANOPY',
+      position: 'BACK END DEV',
+      year: '2015',
+      dot: './images/Counter.png',
       technologies: [
-        "html",
-        "CSS",
-        "Javascript",
-        "Github",
-        "Ruby",
-        "Bootstrap",
+        'html',
+        'CSS',
+        'Javascript',
+        'Github',
+        'Ruby',
+        'Bootstrap',
       ],
-      closebtn: "./images/closeIcon.png",
+      closebtn: './images/closeIcon.png',
       linkToLive:
-        "https://saifullah767.github.io/Portfolio_module/project_one.html",
-      linkToSource: "https://github.com/saifullah767/Portfolio_module.git",
+        'https://saifullah767.github.io/Portfolio_module/project_one.html',
+      linkToSource: 'https://github.com/saifullah767/Portfolio_module.git',
     },
     {
       key: 4,
-      name: "Multi-Post Stories",
+      name: 'Multi-Post Stories',
       description:
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
+        'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
       normaldesc:
-        "A daily selection of privately personalized reads; no accounts or sign-ups required",
-      featuredImage: "./Portoflio/Snapshoot2.png",
-      MobileImage: "./images/Snap4.png",
-      company: "CANOPY",
-      position: "BACK END DEV",
-      year: "2015",
-      dot: "./images/Counter.png",
+        'A daily selection of privately personalized reads; no accounts or sign-ups required',
+      featuredImage: './Portoflio/Snapshoot2.png',
+      MobileImage: './images/Snap4.png',
+      company: 'CANOPY',
+      position: 'BACK END DEV',
+      year: '2015',
+      dot: './images/Counter.png',
       technologies: [
-        "html",
-        "CSS",
-        "Javascript",
-        "Github",
-        "Ruby",
-        "Bootstrap",
+        'html',
+        'CSS',
+        'Javascript',
+        'Github',
+        'Ruby',
+        'Bootstrap',
       ],
-      closebtn: "./images/closeIcon.png",
+      closebtn: './images/closeIcon.png',
       linkToLive:
-        "https://saifullah767.github.io/Portfolio_module/project_one.html",
-      linkToSource: "https://github.com/saifullah767/Portfolio_module.git",
+        'https://saifullah767.github.io/Portfolio_module/project_one.html',
+      linkToSource: 'https://github.com/saifullah767/Portfolio_module.git',
     },
   ],
 };
 const myProjects = data.projects;
-const Work = document.querySelector("#portfolio");
+const Work = document.querySelector('#portfolio');
 function implementProject() {
   let i = 0;
   myProjects.forEach((project) => {
@@ -171,18 +171,18 @@ implementProject();
 
 const popProjects = data.projects[0];
 function popupProject(y) {
-  const project = document.getElementById("popup");
-  if (project.style.display === "none") {
-    project.style.display = "flex";
-    project.style.overflowY = "scroll";
-    b.style.filter = "blur(2px)";
-    c.style.filter = "blur(2px)";
-    body.style.overflowY = "hidden";
+  const project = document.getElementById('popup');
+  if (project.style.display === 'none') {
+    project.style.display = 'flex';
+    project.style.overflowY = 'scroll';
+    b.style.filter = 'blur(2px)';
+    c.style.filter = 'blur(2px)';
+    body.style.overflowY = 'hidden';
 
-    const title = document.querySelector(".title-one");
+    const title = document.querySelector('.title-one');
     title.innerHTML = `<h2>${popProjects.name}</h2>`;
 
-    const canopy = document.querySelector(".canopy");
+    const canopy = document.querySelector('.canopy');
     canopy.innerHTML = `           
    <span class='can-pop'> CANOPY </span>
   <img class='dot' src='./images/Counter.png' alt='' />
@@ -191,16 +191,16 @@ function popupProject(y) {
   <span class='side-pop'> 2015 </span>
   `;
 
-    const theImage = document.querySelector(".pop-websnap");
+    const theImage = document.querySelector('.pop-websnap');
     theImage.innerHTML = `
   <img  src='${popProjects.featuredImage}' alt='Project screenshot' />
   `;
 
-    const paratext = document.querySelector(".pop-text");
+    const paratext = document.querySelector('.pop-text');
     paratext.innerHTML = `
   <p> ${popProjects.description} </p>`;
 
-    const theList = document.querySelector(".links-pop");
+    const theList = document.querySelector('.links-pop');
     theList.innerHTML = `
   <ul>
   <li class='link'>${popProjects.technologies[0]}</li>
@@ -218,21 +218,21 @@ function popupProject(y) {
   <a href='${popProjects.linkToSource}' class='pro-pop focusable'> See Source <img class='btn_icon' src='./images/github_purple.png' alt='icon'> </a>
   `;
   } else {
-    project.style.display = "none";
-    b.style.filter = "none";
-    c.style.filter = "none";
-    body.style.overflowY = "scroll";
+    project.style.display = 'none';
+    b.style.filter = 'none';
+    c.style.filter = 'none';
+    body.style.overflowY = 'scroll';
   }
 }
 
-const cform = document.querySelector(".contact-form");
-const errMessage = document.querySelector(".validate");
-const mail = document.querySelector(".contactme");
+const cform = document.querySelector('.contact-form');
+const errMessage = document.querySelector('.validate');
+const mail = document.querySelector('.contactme');
 
-cform.addEventListener("submit", (event) => {
+cform.addEventListener('submit', (event) => {
   event.preventDefault();
   if (mail.value !== mail.value.toLowerCase()) {
-    errMessage.style.display = "block";
+    errMessage.style.display = 'block';
   } else {
     cform.submit();
   }
