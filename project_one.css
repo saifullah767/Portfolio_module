@@ -418,7 +418,7 @@
     margin: 10px 0 18px 27px;
   }
 
-  .contact p {
+  .contact_para {
     color: white;
     font-style: normal;
     font-family: "Poppins", sans-serif;
@@ -627,7 +627,7 @@
     border: 1px solid red;
     color: red;
     background-color: #98a0a3;
-    margin-top: -8px;
+    margin-top: 5px;
     padding: 1px;
     font-family: "Poppins", sans-serif;
   }
@@ -1077,7 +1077,7 @@
     margin: 10px 0 18px 27px;
   }
 
-  .contact p {
+  .contact_para {
     color: white;
     font-style: normal;
     font-family: "Poppins", sans-serif;
@@ -1248,7 +1248,7 @@
     border: 1px solid red;
     color: red;
     background-color: #98a0a3;
-    margin-top: -10px;
+    margin-top: 5px;
     border-radius: 0 0 8px 8px;
     padding: 1px;
     font-family: "Poppins", sans-serif;
