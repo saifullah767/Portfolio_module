@@ -27,7 +27,7 @@
               class="menu"
               id="menu"
               href="javascript:void(0);"
-              onclick="menu_btn()"
+              onclick="menuBtn()"
             >
               <img src="./icons/Menu.png" alt="Menu button" />
             </a>
@@ -39,15 +39,15 @@
           </nav>
         </header>
         <div id="myLinks">
-          <a href="javascript:void(0);" class="close_btn" onclick="menu_btn()">
-            <img src="./images/Close_menu.svg" alt="close botton" />
+          <a href="javascript:void(0);" onclick="menuBtn()" class="close_btn" >
+            <img src="./images/Close_menu.svg"  alt="close botton" />
           </a>
 
-          <a href="#portfolio" onclick="menu_btn()" class="por focusable"
+          <a href="#portfolio" onclick="menuBtn()" class="por focusable"
             >Portfolio</a
           >
-          <a href="#about" onclick="menu_btn()" class="focusable">About</a>
-          <a href="#contact" onclick="menu_btn()" class="focusable">Contact</a>
+          <a href="#about" onclick="menuBtn()" class="focusable">About</a>
+          <a href="#contact" onclick="menuBtn()" class="focusable">Contact</a>
         </div>
 
         <section class="content" id="blur">
@@ -108,140 +108,32 @@
           </div>
         </section>
       </div>
-      <section class="portfolio" id="portfolio">
-        <div class="card">
-          <div class="snap">
-            <img src="./images/Snap.png" alt="Project screenshot" />
-          </div>
-          <div class="websnap">
-            <img src="./Portoflio/Snapshoot1.png" alt="Project screenshot" />
-          </div>
-          <section class="main">
-            <h2>Tonic</h2>
-            <div class="mid">
-              <span class="can"> CANOPY </span>
-              <img class="dot" src="./images/Counter.png" alt="" />
-              <span class="side"> BACK END DEV </span>
-              <img class="dot" src="./images/Counter.png" alt="" />
-              <span class="side"> 2015 </span>
-            </div>
-            <p class="para">
-              A daily selection of privately personalized reads; no accounts or
-              sign-ups required.
-            </p>
-            <div class="links">
-              <ul>
-                <li class="link">html</li>
-                <li class="link">css</li>
-                <li class="link">javaScript</li>
-              </ul>
-            </div>
-            <a href="#" class="pro focusable"> See Project </a>
-          </section>
-        </div>
 
-        <br />
+      <section id="popup">
+        <div class="pop-card">
+          <h2 class="title-one">Tonic</h2>
 
-        <div class="card webcard">
-          <div class="snap">
-            <img src="./images/Snap2.png" alt="Project screenshot" />
-          </div>
-          <div class="websnap1">
-            <img src="./Portoflio/Snapshoot2.png" alt="Project screenshot" />
-          </div>
-          <section class="main main1">
-            <h2>Multi-Post</h2>
-            <h2>Stories</h2>
-            <div class="mid">
-              <span class="can"> CANOPY </span>
-              <img class="dot" src="./images/Counter.png" alt="" />
-              <span class="side"> BACK END DEV </span>
-              <img class="dot" src="./images/Counter.png" alt="" />
-              <span class="side"> 2015 </span>
-            </div>
-            <p class="para">
-              A daily selection of privately personalized reads; no accounts or
-              sign-ups required.
-            </p>
-            <div class="links">
-              <ul>
-                <li class="link">html</li>
-                <li class="link">css</li>
-                <li class="link">javaScript</li>
-              </ul>
-            </div>
-            <a href="#" class="pro focusable"> See Project </a>
-          </section>
-        </div>
+          <a href="javascript:void(0);" class="close_pop">
+            <img
+              src="./images/closeIcon.png"
+              onclick="popupProject()"
+              alt="close botton"
+            />
+          </a>
 
-        <br />
-        <br />
-        <div class="card">
-          <div class="snap">
-            <img src="./images/Snap3.png" alt="Project screenshot" />
-          </div>
-          <div class="websnap">
-            <img src="./Portoflio/Snapshoot3.png" alt="Project screenshot" />
-          </div>
-          <section class="main">
-            <h2>Tonic</h2>
-            <div class="mid">
-              <span class="can"> CANOPY </span>
-              <img class="dot" src="./images/Counter.png" alt="" />
-              <span class="side"> BACK END DEV </span>
-              <img class="dot" src="./images/Counter.png" alt="" />
-              <span class="side"> 2015 </span>
-            </div>
-            <p class="para">
-              A daily selection of privately personalized reads; no accounts or
-              sign-ups required.
-            </p>
-            <div class="links">
-              <ul>
-                <li class="link">html</li>
-                <li class="link">css</li>
-                <li class="link">javaScript</li>
-              </ul>
-            </div>
-            <a href="#" class="pro focusable"> See Project </a>
-          </section>
-        </div>
+          <div class="canopy"></div>
 
-        <br />
-        <br />
+          <div class="pop-mobile"></div>
 
-        <div class="card webcard">
-          <div class="snap">
-            <img src="./images/Snap4.png" alt="Project screenshot" />
+          <div class="pop-websnap"></div>
+          <div class="pop-content">
+            <div class="pop-text"></div>
+
+            <div class="links-pop"></div>
           </div>
-          <div class="websnap1">
-            <img src="./Portoflio/Snapshoot4.png" alt="Project screenshot" />
-          </div>
-          <section class="main main1">
-            <h2>Multi-Post</h2>
-            <h2>Stories</h2>
-            <div class="mid">
-              <span class="can"> CANOPY </span>
-              <img class="dot" src="./images/Counter.png" alt="" />
-              <span class="side"> BACK END DEV </span>
-              <img class="dot" src="./images/Counter.png" alt="" />
-              <span class="side"> 2015 </span>
-            </div>
-            <p class="para">
-              A daily selection of privately personalized reads; no accounts or
-              sign-ups required.
-            </p>
-            <div class="links">
-              <ul>
-                <li class="link">html</li>
-                <li class="link">css</li>
-                <li class="link">javaScript</li>
-              </ul>
-            </div>
-            <a href="#" class="pro focusable"> See Project </a>
-          </section>
         </div>
       </section>
+      <section class="portfolio" id="portfolio"></section>
       <br />
       <br />
 
