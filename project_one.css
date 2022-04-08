@@ -622,11 +622,7 @@
     top: -2rem;
   }
 
-  #email{
-
-  }
-
-  .validate{
+  .validate {
     display: none;
     border: 1px solid red;
     color: red;
@@ -1247,7 +1243,7 @@
     top: -2rem;
   }
 
-  .validate{
+  .validate {
     display: none;
     border: 1px solid red;
     color: red;
